@@ -6,12 +6,8 @@ A modern, production-ready portfolio website I built to showcase my software eng
 
 ## About This Project
 
-This portfolio website represents my approach to building professional, user-focused web applications. I designed and developed every aspect of this site from scratch, focusing on performance, accessibility, SEO, and a clean user experience that effectively communicates my technical capabilities to recruiters, hiring managers, and fellow developers.
+This portfolio website represe nts my approach to building professional, user-focused web applications. I designed and developedevery aspect of this site from scratch, focusing on performance, accessibility, SEO, and a clean user experience that effectively communicates my technical capabilities to recruiters, hiring managers, and fellow developers.
 
-## Preview
-
-![Neural OS Preview 1](./public/neural-os-1.jpg)
-![Neural OS Preview 2](./public/neural-os-2.jpg)
 
 ### Why I Built This
 
@@ -249,10 +245,10 @@ Unlike template-based portfolios, this project demonstrates:
 
 I'm actively seeking software engineering opportunities where I can contribute to meaningful projects and continue growing as a developer.
 
-- **Website**: [nickwyrwas.com](https://nickwyrwas.com)
-- **Email**: [nick.wyrwas@outlook.com]
+- **Website**: [nickwyrwas.com](nwyrwas.github.io)
+- **Email**: nick.wyrwas@outlook.com
 - **GitHub**: [github.com/nwyrwas](https://github.com/nwyrwas)
-- **LinkedIn**: [linkedin.com/in/nicholas-wyrwas]
+- **LinkedIn**: [linkedin.com/in/nicholas-wyrwas](https://linkedin.com/in/nicholas-wyrwas)
 
 ## License
 
