@@ -140,6 +140,126 @@ export const projects: Project[] = [
     links: {
       github: "https://github.com/nwyrwas/neural-os"
     }
+  },
+  {
+    id: "animal-shelter-analytics",
+    title: "Animal Shelter Analytics Dashboard",
+    shortDescription: "An interactive data analytics dashboard built with Dash and MongoDB that transforms static animal shelter data into actionable insights with real-time visualizations and geospatial mapping",
+    featured: true,
+    year: "2025",
+    context: {
+      problem: "Animal shelters need data-driven insights to optimize rescue operations, but traditional CRUD applications lack visualization capabilities and interactive analytics to identify adoption trends and geographic patterns.",
+      constraints: [
+        "Transform existing Flask CRUD app into full analytics dashboard",
+        "Handle 2,000+ animal records with real-time filtering",
+        "Implement secure database operations (SEI CERT, OWASP standards)",
+        "Support specialized rescue type queries (Water, Mountain, Disaster)",
+        "Maintain modular, scalable MVC architecture"
+      ],
+      stakes: "Computer Science capstone project demonstrating software engineering principles, data visualization, database optimization, and secure coding practices for degree completion at Southern New Hampshire University"
+    },
+    role: {
+      title: "Full-Stack Software Engineering",
+      ownership: "Complete refactor of original artifact: system redesign, database optimization, visualization implementation, security hardening, and documentation",
+      teamSize: "Academic Capstone Project (Individual)"
+    },
+    approach: {
+      overview: "Refactored a basic Flask CRUD application into an interactive analytics dashboard using Dash framework, MongoDB with aggregation pipelines, and multiple visualization libraries (Matplotlib, Plotly, Dash Leaflet) to provide rescue organizations with actionable data insights.",
+      decisions: [
+        {
+          decision: "Dash framework for interactive analytics",
+          rationale: "Dash provides React-powered components without JavaScript, enabling rapid development of interactive dashboards with Python callbacks for real-time data updates and filtering."
+        },
+        {
+          decision: "MongoDB aggregation pipelines for analytics",
+          rationale: "Aggregation pipelines enable complex data transformations and grouping operations directly in the database, reducing application-layer processing and improving query performance."
+        },
+        {
+          decision: "Matplotlib + Plotly dual visualization approach",
+          rationale: "Matplotlib for static chart generation and Plotly for interactive visualizations provides flexibility for both reporting and exploratory data analysis."
+        },
+        {
+          decision: "Dash Leaflet for geospatial mapping",
+          rationale: "Interactive maps allow rescue coordinators to visualize animal locations, identify geographic patterns, and optimize rescue operations based on spatial distribution."
+        },
+        {
+          decision: "Parameterized queries with MongoDB $regex operators",
+          rationale: "Prevents NoSQL injection attacks while maintaining flexible search functionality across multiple fields with case-insensitive pattern matching."
+        },
+        {
+          decision: "MVC-inspired modular architecture",
+          rationale: "Separating CRUD operations (crud.py), application logic (app.py), and data import (load_csv.py) improves maintainability and enables independent testing of components."
+        }
+      ],
+      alternatives: "Considered using Streamlit for rapid prototyping but chose Dash for production-grade callback system and better control over component behavior"
+    },
+    challenges: [
+      {
+        challenge: "Transforming static CRUD operations into dynamic analytics",
+        solution: "Implemented MongoDB aggregation pipelines to compute breed distribution statistics, adoption trends by intake type, and time-series analysis directly in the database layer, then exposed results through reactive Dash callbacks."
+      },
+      {
+        challenge: "Real-time filtering across 2,000+ records without performance degradation",
+        solution: "Combined server-side MongoDB queries with client-side Dash DataTable virtual pagination and derived data callbacks to minimize full dataset transfers while maintaining responsive UI."
+      },
+      {
+        challenge: "Specialized rescue type filtering with complex breed/age/gender criteria",
+        solution: "Built parameterized query builders using MongoDB $and/$or operators with $regex for breed matching and $gte/$lte for age ranges, enabling precise filtering for Water, Mountain, and Disaster rescue classifications."
+      },
+      {
+        challenge: "Securing database operations against injection attacks",
+        solution: "Implemented parameterized queries throughout the CRUD layer, applied input validation on user searches, and used MongoDB's built-in operators ($regex, $and, $or) instead of string concatenation to prevent NoSQL injection."
+      },
+      {
+        challenge: "Interactive geospatial visualization of shelter locations",
+        solution: "Integrated Dash Leaflet with marker clustering and tooltips, using MongoDB geospatial data to render animal locations on interactive maps with breed/name metadata and coordinate-based zoom."
+      }
+    ],
+    outcomes: [
+      {
+        metric: "Capstone Completion",
+        impact: "Successfully completed Computer Science B.S. capstone requirement, demonstrating mastery of software design, algorithms, databases, and security"
+      },
+      {
+        metric: "Architecture Enhancement",
+        impact: "Refactored monolithic Flask CRUD app into modular MVC architecture with separated concerns (CRUD operations, application logic, data import)"
+      },
+      {
+        metric: "Data Visualization",
+        impact: "Implemented interactive dashboards with Matplotlib bar charts (top 10 breeds), Plotly analytics, and Dash Leaflet geospatial mapping"
+      },
+      {
+        metric: "Database Optimization",
+        impact: "MongoDB aggregation pipelines for breed distribution, parameterized queries for security, and efficient filtering supporting 2,000+ records"
+      },
+      {
+        metric: "Search Functionality",
+        impact: "Cross-column case-insensitive search with MongoDB $regex, specialized rescue type filters (Water, Mountain, Disaster), and real-time result updates"
+      },
+      {
+        metric: "Security Implementation",
+        impact: "Applied SEI CERT and OWASP standards with parameterized queries, input validation, and NoSQL injection prevention"
+      },
+      {
+        metric: "User Experience",
+        impact: "Dark-themed responsive UI with interactive data tables, dynamic charts, and map-based location visualization"
+      }
+    ],
+    techStack: [
+      "Python 3.13",
+      "Dash",
+      "Flask",
+      "MongoDB",
+      "Pandas",
+      "Matplotlib",
+      "Plotly",
+      "Dash Leaflet",
+      "HTML/CSS",
+      "Base64 Encoding"
+    ],
+    links: {
+      github: "https://github.com/nwyrwas/CS-499-Capstone-Project"
+    }
   }
 ];
 
