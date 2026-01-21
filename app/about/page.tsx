@@ -260,8 +260,9 @@ export default function AboutPage() {
 
             <h2 className="heading-3 mb-6">Outside of Work</h2>
             <p className="body mb-12">
-              When I'm not coding, I contribute to open-source developer tooling and occasionally write technical articles
-              about performance optimization and system design. I'm also an avid reader of engineering blogs and technical papers.
+              Outside of coursework and personal projects, I spend time strengthening my fundamentals through hands-on practice,
+              exploring open-source projects, and staying current with modern software development practices.
+              I enjoy learning how real-world systems are built and continuously improving my skills as an engineer.
             </p>
 
             <div className="pt-8 border-t border-gray-200">
