@@ -291,7 +291,7 @@ export default function SkillsPage() {
             <div className="flex items-start gap-3">
               <div className="mt-1 w-2 h-2 rounded-full bg-primary-500 flex-shrink-0"></div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">APT Integration</h3>
+                <h3 className="font-semibold text-gray-900 mb-1">API Integration</h3>
                 <p className="text-sm text-gray-600">API development and third-party service integration</p>
               </div>
             </div>
