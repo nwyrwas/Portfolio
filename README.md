@@ -8,7 +8,6 @@ A modern, production-ready portfolio website I built to showcase my software eng
 
 This portfolio website represe nts my approach to building professional, user-focused web applications. I designed and developedevery aspect of this site from scratch, focusing on performance, accessibility, SEO, and a clean user experience that effectively communicates my technical capabilities to recruiters, hiring managers, and fellow developers.
 
-
 ### Why I Built This
 
 As a software engineering graduate and U.S. Marine Corps veteran transitioning into the tech industry, I needed a professional platform that:
