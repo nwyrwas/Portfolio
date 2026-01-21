@@ -31,14 +31,16 @@ export default function AboutPage() {
               </p>
 
               <p className="body mb-6">
-                Before transitioning fully into software engineering, I led training and documentation initiatives in a regulated manufacturing environment,
-                working under ISO 13485 and cGMP standards. This experience strengthened my attention to detail, systems thinking, and ability to operate in
-                high-accountability environments—skills I now apply directly to software architecture, secure coding, and technical documentation.
+                Before transitioning fully into software engineering, I served in the U.S. Marine Corps and later worked in regulated
+                manufacturing environments operating under ISO 13485 and cGMP standards. These experiences reinforced discipline,
+                attention to detail, and the importance of clear processes—principles I now apply to writing secure, reliable,
+                and well-documented software.
               </p>
 
               <p className="body mb-8">
-                I am currently seeking an entry-level or junior software engineering role where I can continue to grow under strong technical mentorship,
-                contribute meaningfully to production systems, and apply my problem-solving mindset to complex engineering challenges.
+                I am actively seeking an entry-level or junior software engineering role where I can grow under experienced mentorship,
+                contribute to production codebases, and continue building strong fundamentals in backend and full-stack development.
+                I’m motivated by environments that emphasize clean design, reliability, and continuous improvement.
               </p>
             </div>
 
@@ -252,9 +254,8 @@ export default function AboutPage() {
             <div className="bg-gray-50 border-l-4 border-primary-500 p-6 rounded-r mb-12">
               <h3 className="heading-4 mb-3">Continuous Learning</h3>
               <p className="body">
-                I stay current through reading technical papers, contributing to open-source projects, and building personal projects
-                that push my understanding of modern software engineering practices. I believe the best way to learn is by building
-                and teaching others.
+                I continue developing my skills through hands-on practice, personal projects, and studying real-world codebases.
+                I’m motivated by learning through building, refining my work through feedback, and steadily improving as an engineer.
               </p>
             </div>
 

@@ -134,13 +134,15 @@ export default function Home() {
             <h2 className="heading-2 mb-4">Technical Foundation</h2>
 
             <p className="body-large mb-6">
-              I am an early-career software engineer with a strong foundation in backend development, API design, and full-stack application building.
+              I’m a recent software engineering graduate with a solid foundation in backend development,
+              API design, and building full-stack applications through academic and personal projects.
             </p>
 
             <p className="body mb-8">
-              I enjoy working on the core systems behind applications, where clean design, security awareness, and thoughtful trade-offs contribute to software that is reliable and easy to maintain as it evolves.
+              I’m particularly interested in the core systems behind applications—where clear structure,
+              security fundamentals, and thoughtful design decisions help software remain reliable and
+              maintainable as it grows.
             </p>
-
             <Button href="/skills" variant="text" size="md">
               View Full Skill Set →
             </Button>
