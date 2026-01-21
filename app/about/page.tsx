@@ -11,34 +11,54 @@ export default function AboutPage() {
   return (
     <>
       <Section className="pt-20">
-        <div className="max-w-4xl">
+        <div className="max-w-6xl">
           <h1 className="heading-1 mb-8">About Me</h1>
 
-          <div className="prose prose-lg max-w-none">
-            <p className="body-large mb-6 text-gray-700">
-              I am a Marine Corps veteran and recent Computer Science graduate specializing in full-stack software development and applied AI engineering. 
-              I bring a disciplined, mission-driven approach to building reliable, secure, and scalable software systems—shaped by both military service and hands-on 
-              industry experience.
-            </p>
+          <div className="grid md:grid-cols-3 gap-12 items-start">
+            {/* Text Content - Left Side (2/3 width) */}
+            <div className="md:col-span-2 prose prose-lg max-w-none">
+              <p className="body-large mb-6 text-gray-700">
+                I am a Marine Corps veteran and recent Computer Science graduate specializing in full-stack software development and applied AI engineering.
+                I bring a disciplined, mission-driven approach to building reliable, secure, and scalable software systems—shaped by both military service and hands-on
+                industry experience.
+              </p>
 
-            <p className="body mb-6">
-              My technical background spans full-stack web development, RESTful API design, and AI-powered applications. 
-              Through internships in generative AI and software engineering, I have worked with technologies such as Python, JavaScript, React, Django, Node.js, and 
-              modern AI frameworks to deliver production-ready solutions. I am particularly interested in building systems that balance performance, maintainability, 
-              and real-world usability.
-            </p>
+              <p className="body mb-6">
+                My technical background spans full-stack web development, RESTful API design, and AI-powered applications.
+                Through internships in generative AI and software engineering, I have worked with technologies such as Python, JavaScript, React, Django, Node.js, and
+                modern AI frameworks to deliver production-ready solutions. I am particularly interested in building systems that balance performance, maintainability,
+                and real-world usability.
+              </p>
 
-            <p className="body mb-6">
-              Before transitioning fully into software engineering, I led training and documentation initiatives in a regulated manufacturing environment, 
-              working under ISO 13485 and cGMP standards. This experience strengthened my attention to detail, systems thinking, and ability to operate in 
-              high-accountability environments—skills I now apply directly to software architecture, secure coding, and technical documentation.
-            </p>
+              <p className="body mb-6">
+                Before transitioning fully into software engineering, I led training and documentation initiatives in a regulated manufacturing environment,
+                working under ISO 13485 and cGMP standards. This experience strengthened my attention to detail, systems thinking, and ability to operate in
+                high-accountability environments—skills I now apply directly to software architecture, secure coding, and technical documentation.
+              </p>
 
-            <p className="body mb-8">
-              I am currently seeking an entry-level or junior software engineering role where I can continue to grow under strong technical mentorship, 
-              contribute meaningfully to production systems, and apply my problem-solving mindset to complex engineering challenges.
-            </p>
+              <p className="body mb-8">
+                I am currently seeking an entry-level or junior software engineering role where I can continue to grow under strong technical mentorship,
+                contribute meaningfully to production systems, and apply my problem-solving mindset to complex engineering challenges.
+              </p>
+            </div>
 
+            {/* Photo - Right Side (1/3 width) */}
+            <div className="md:col-span-1">
+              <div className="sticky top-24">
+                <img
+                  src="/headshot.jpg"
+                  alt="Nick Wyrwas"
+                  className="w-full rounded-lg shadow-lg"
+                />
+                <p className="text-sm text-gray-600 text-center mt-4">
+                  Nick Wyrwas
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Continue with the rest of the content */}
+          <div className="max-w-4xl mt-12">
             <div className="bg-gray-50 border-l-4 border-primary-500 p-6 rounded-r mb-12">
               <h2 className="heading-4 mb-4">What I Value</h2>
               <ul className="space-y-3">
