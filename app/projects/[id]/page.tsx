@@ -1,9 +1,11 @@
+'use client';
+
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 import { projects, getProjectById } from "@/data/projects";
 import { notFound } from "next/navigation";
-import { Metadata } from "next";
 import Image from "next/image";
+import { useState } from "react";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -15,22 +17,6 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = await params;
-  const project = getProjectById(id);
-
-  if (!project) {
-    return {
-      title: "Project Not Found",
-    };
-  }
-
-  return {
-    title: `${project.title} – Your Name`,
-    description: project.shortDescription,
-  };
-}
-
 export default async function ProjectPage({ params }: Props) {
   const { id } = await params;
   const project = getProjectById(id);
@@ -38,6 +24,8 @@ export default async function ProjectPage({ params }: Props) {
   if (!project) {
     notFound();
   }
+
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
     <>
@@ -64,31 +52,48 @@ export default async function ProjectPage({ params }: Props) {
             {project.images.length === 1 ? (
               /* Single Image - Full Width Centered */
               <div className="flex justify-center">
-                <div className="relative w-full max-w-4xl rounded-lg overflow-hidden shadow-lg">
+                <button
+                  onClick={() => setSelectedImage(project.images![0])}
+                  className="relative w-full max-w-4xl rounded-lg overflow-hidden shadow-lg cursor-pointer group transition-transform hover:scale-[1.02] duration-300"
+                >
                   <Image
                     src={project.images[0]}
                     alt={`${project.title} screenshot`}
                     width={1200}
                     height={675}
-                    className="w-full h-auto"
+                    className="w-full h-auto transition-opacity group-hover:opacity-90"
                     priority
                   />
-                </div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
+                    <div className="bg-white/90 px-4 py-2 rounded-lg text-sm font-medium text-gray-900">
+                      Click to view fullscreen
+                    </div>
+                  </div>
+                </button>
               </div>
             ) : project.images.length === 2 ? (
               /* Two Images - Side by Side on Desktop, Stacked on Mobile */
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
                 {project.images.map((image, idx) => (
-                  <div key={idx} className="relative rounded-lg overflow-hidden shadow-lg bg-gray-900">
+                  <button
+                    key={idx}
+                    onClick={() => setSelectedImage(image)}
+                    className="relative rounded-lg overflow-hidden shadow-lg bg-gray-900 cursor-pointer group transition-transform hover:scale-[1.02] duration-300"
+                  >
                     <Image
                       src={image}
                       alt={`${project.title} screenshot ${idx + 1}`}
                       width={800}
                       height={450}
-                      className="w-full h-auto object-contain"
+                      className="w-full h-auto object-contain transition-opacity group-hover:opacity-90"
                       priority={idx === 0}
                     />
-                  </div>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
+                      <div className="bg-white/90 px-4 py-2 rounded-lg text-sm font-medium text-gray-900">
+                        Click to view fullscreen
+                      </div>
+                    </div>
+                  </button>
                 ))}
               </div>
             ) : (
@@ -96,33 +101,76 @@ export default async function ProjectPage({ params }: Props) {
               <div className="max-w-6xl mx-auto">
                 {/* First image takes full width */}
                 <div className="mb-6 flex justify-center">
-                  <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
+                  <button
+                    onClick={() => setSelectedImage(project.images![0])}
+                    className="relative w-full rounded-lg overflow-hidden shadow-lg cursor-pointer group transition-transform hover:scale-[1.02] duration-300"
+                  >
                     <Image
                       src={project.images[0]}
                       alt={`${project.title} screenshot 1`}
                       width={1200}
                       height={675}
-                      className="w-full h-auto"
+                      className="w-full h-auto transition-opacity group-hover:opacity-90"
                       priority
                     />
-                  </div>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
+                      <div className="bg-white/90 px-4 py-2 rounded-lg text-sm font-medium text-gray-900">
+                        Click to view fullscreen
+                      </div>
+                    </div>
+                  </button>
                 </div>
                 {/* Remaining images in a grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {project.images.slice(1).map((image, idx) => (
-                    <div key={idx + 1} className="relative rounded-lg overflow-hidden shadow-lg">
+                    <button
+                      key={idx + 1}
+                      onClick={() => setSelectedImage(image)}
+                      className="relative rounded-lg overflow-hidden shadow-lg cursor-pointer group transition-transform hover:scale-[1.02] duration-300"
+                    >
                       <Image
                         src={image}
                         alt={`${project.title} screenshot ${idx + 2}`}
                         width={800}
                         height={450}
-                        className="w-full h-auto"
+                        className="w-full h-auto transition-opacity group-hover:opacity-90"
                       />
-                    </div>
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
+                        <div className="bg-white/90 px-4 py-2 rounded-lg text-sm font-medium text-gray-900">
+                          Click to view fullscreen
+                        </div>
+                      </div>
+                    </button>
                   ))}
                 </div>
               </div>
             )}
+          </div>
+        )}
+
+        {/* Fullscreen Image Modal */}
+        {selectedImage && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
+            onClick={() => setSelectedImage(null)}
+          >
+            <button
+              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+              onClick={() => setSelectedImage(null)}
+            >
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <div className="relative max-w-7xl max-h-[90vh] w-full">
+              <Image
+                src={selectedImage}
+                alt="Fullscreen view"
+                width={1920}
+                height={1080}
+                className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
+              />
+            </div>
           </div>
         )}
 
