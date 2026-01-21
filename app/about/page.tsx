@@ -126,10 +126,12 @@ export default function AboutPage() {
                   Walmart • June 2025 – Present
                 </p>
                 <ul className="space-y-2 body text-gray-700">
-                  <li>• Performed vehicle maintenance services including oil changes, tire services, and safety inspections while adhering to strict procedural and safety standards.</li>
-                  <li>• Diagnosed mechanical issues using standardized checklists and tools, ensuring accurate service recommendations and quality outcomes.</li>
-                  <li>• Documented services and findings clearly and accurately to support customer communication and internal quality control.</li>
-                  <li>• Worked in a fast-paced, team-oriented environment requiring time management, attention to detail, and consistent execution under pressure.</li>
+                  <li>• Performed routine maintenance, diagnostics, and repair on customer vehicles to ensure optimal performance and safety.</li>
+                  <li>• Conducted inspections of brakes, tires, fluids, and other critical vehicle systems to identify and resolve issues efficiently.</li>
+                  <li>• Provided clear, professional guidance to customers regarding recommended repairs, maintenance schedules, and safety considerations.</li>
+                  <li>• Documented service work accurately in company systems to maintain records and track completed maintenance tasks.</li>
+                  <li>• Collaborated with team members to optimize workflow, maintain parts inventory, and meet daily service targets.</li>
+                  <li>• Adhered strictly to safety protocols, company standards, and regulatory compliance requirements.</li>
                 </ul>
               </div>
 
@@ -170,6 +172,33 @@ export default function AboutPage() {
                   <li>• Mentored new hires and junior team members, increasing retention and fostering a culture of accountability.</li>
                   <li>• Collaborated with stakeholders to address compliance gaps, refine processes, and align training with evolving business goals.</li>
                   <li>• Developed and tracked key performance indicators (KPIs) for onboarding efficiency, retention, and turnover analysis.</li>
+                </ul>
+              </div>
+
+              <div className="border-l-2 border-gray-300 pl-6 py-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Needle Punch Operator</h3>
+                <p className="text-sm text-gray-600 mb-3">Stryker Medical Cary • February 2019 - December 2019</p>
+                <ul className="space-y-2 body text-gray-700">
+                  <li>• Conducted routine inspections and maintenance on equipment to ensure safe and reliable operation.</li>
+                  <li>• Collaborated with the production team to meet daily manufacturing goals while maintaining strict adherence to quality control protocols.</li>
+                  <li>• Documented production data and machine performance metrics to support process improvements and operational excellence.</li>
+                  <li>• Managed raw material movement, roll stock, and performed light machine adjustments</li>
+                  <li>• Adhered to all safety guidelines and company policies, fostering a compliant and secure work environment.</li>
+                </ul>
+              </div>
+
+              <div className="border-l-2 border-gray-300 pl-6 py-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Infantry</h3>
+                <p className="text-sm text-gray-600 mb-3">United States Marine Corps • August 2013 - December 2016</p>
+                <ul className="space-y-2 body text-gray-700">
+                  <li>• Executed ground combat operations, operated diverse weapon systems, maintained equipment integrity, and contributed to reconnaissance missions
+                        with precision and professionalism.</li>
+                  <li>• Operated and maintained a wide range of weaponry, communication systems, and field equipment, ensuring readiness and compliance with operational
+                        standards.</li>
+                  <li>• Participated in reconnaissance and surveillance missions to gather actionable intelligence and support strategic decision-making.</li>
+                  <li>• Trained and collaborated with team members to enhance combat readiness, adaptability, and overall mission success.</li>
+                  <li>• Conducted tactical ground operations, including offensive and defensive maneuvers, to achieve mission objectives while ensuring team safety and
+                        operational efficiency.</li>
                 </ul>
               </div>
             </div>
