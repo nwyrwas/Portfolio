@@ -3,6 +3,7 @@ import Button from "@/components/Button";
 import { projects, getProjectById } from "@/data/projects";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import Image from "next/image";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -56,6 +57,74 @@ export default async function ProjectPage({ params }: Props) {
           <h1 className="heading-1 mb-6">{project.title}</h1>
           <p className="body-large text-gray-700">{project.shortDescription}</p>
         </div>
+
+        {/* Project Images */}
+        {project.images && project.images.length > 0 && (
+          <div className="mb-12">
+            {project.images.length === 1 ? (
+              /* Single Image - Full Width Centered */
+              <div className="flex justify-center">
+                <div className="relative w-full max-w-4xl rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src={project.images[0]}
+                    alt={`${project.title} screenshot`}
+                    width={1200}
+                    height={675}
+                    className="w-full h-auto"
+                    priority
+                  />
+                </div>
+              </div>
+            ) : project.images.length === 2 ? (
+              /* Two Images - Side by Side on Desktop, Stacked on Mobile */
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+                {project.images.map((image, idx) => (
+                  <div key={idx} className="relative rounded-lg overflow-hidden shadow-lg">
+                    <Image
+                      src={image}
+                      alt={`${project.title} screenshot ${idx + 1}`}
+                      width={800}
+                      height={450}
+                      className="w-full h-auto"
+                      priority={idx === 0}
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              /* Three or More Images - Grid Layout */
+              <div className="max-w-6xl mx-auto">
+                {/* First image takes full width */}
+                <div className="mb-6 flex justify-center">
+                  <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
+                    <Image
+                      src={project.images[0]}
+                      alt={`${project.title} screenshot 1`}
+                      width={1200}
+                      height={675}
+                      className="w-full h-auto"
+                      priority
+                    />
+                  </div>
+                </div>
+                {/* Remaining images in a grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {project.images.slice(1).map((image, idx) => (
+                    <div key={idx + 1} className="relative rounded-lg overflow-hidden shadow-lg">
+                      <Image
+                        src={image}
+                        alt={`${project.title} screenshot ${idx + 2}`}
+                        width={800}
+                        height={450}
+                        className="w-full h-auto"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Tech Stack */}
         <div className="mb-16 pb-12 border-b border-gray-200">

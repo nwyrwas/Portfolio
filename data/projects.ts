@@ -36,6 +36,7 @@ export interface Project {
     github?: string;
     case_study?: string;
   };
+  images?: string[];
 }
 
 export const projects: Project[] = [
@@ -139,7 +140,8 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/nwyrwas/neural-os"
-    }
+    },
+    images: ["/neural-os-1.jpg", "/neural-os-2.jpg"]
   },
   {
     id: "animal-shelter-analytics",
@@ -259,7 +261,8 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/nwyrwas/CS-499-Capstone-Project"
-    }
+    },
+    images: ["/animal-shelter-dashboard.jpg"]
   }
 ];
 
