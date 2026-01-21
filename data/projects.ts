@@ -144,6 +144,110 @@ export const projects: Project[] = [
     images: ["/neural-os-1.jpg", "/neural-os-2.jpg"]
   },
   {
+    id: "intelligent-pirate-maze-agent",
+    title: "Intelligent Pirate Maze Agent",
+    shortDescription: "An autonomous AI agent that uses Deep Q-Learning to navigate an 8×8 maze environment, achieving 100% success rate across all starting positions through reinforcement learning",
+    featured: true,
+    year: "2024",
+    context: {
+      problem: "Traditional pathfinding requires explicit programming of rules and strategies. This project explores whether an AI agent can learn optimal navigation autonomously through trial and error, without hardcoded instructions.",
+      constraints: [
+        "8×8 grid maze environment with obstacles and a treasure goal",
+        "Agent must learn from scratch without pre-programmed pathfinding logic",
+        "Must achieve reliable performance across all 44 possible starting positions",
+        "Training must converge within reasonable computational limits (~750 episodes)"
+      ],
+      stakes: "Academic project for CS-370 (Current Emerging Trends in CS) at Southern New Hampshire University, demonstrating understanding of reinforcement learning, neural networks, and AI fundamentals"
+    },
+    role: {
+      title: "Machine Learning Engineer",
+      ownership: "Complete implementation of Deep Q-Learning agent, neural network architecture, training pipeline, reward shaping, and performance analysis",
+      teamSize: "Academic Project (Individual)"
+    },
+    approach: {
+      overview: "Implemented a Deep Q-Learning agent using TensorFlow/Keras with experience replay to train a neural network that learns optimal pathfinding policies through reinforcement learning, balancing exploration and exploitation via epsilon-greedy strategy.",
+      decisions: [
+        {
+          decision: "Deep Q-Learning with neural network function approximation",
+          rationale: "Q-tables are impractical for large state spaces. Neural networks can generalize from seen states to unseen configurations, enabling the agent to handle any starting position."
+        },
+        {
+          decision: "Experience replay buffer for training stability",
+          rationale: "Storing and randomly sampling past experiences breaks correlation between consecutive training samples, leading to more stable learning and faster convergence."
+        },
+        {
+          decision: "64-neuron input layer representing flattened 8×8 maze",
+          rationale: "Each cell in the maze is represented as input, providing the network with complete environmental awareness for decision-making."
+        },
+        {
+          decision: "Two hidden layers with PReLU activation functions",
+          rationale: "PReLU (Parametric ReLU) handles negative values better than standard ReLU, improving learning dynamics in reinforcement learning scenarios where rewards can be negative."
+        },
+        {
+          decision: "Epsilon-greedy exploration strategy with decay",
+          rationale: "Balances exploration (random actions to discover new strategies) with exploitation (using learned knowledge). Decay schedule gradually shifts from exploration to exploitation as training progresses."
+        },
+        {
+          decision: "Shaped reward system with penalties for inefficiency",
+          rationale: "Large positive reward for reaching treasure, negative rewards for wall collisions and inefficient moves encourage the agent to find short, valid paths rather than wandering aimlessly."
+        }
+      ],
+      alternatives: "Considered traditional pathfinding algorithms (A*, Dijkstra) but the goal was demonstrating AI learning capabilities rather than implementing deterministic solutions"
+    },
+    challenges: [
+      {
+        challenge: "Agent initially exhibited random wandering without learning progress",
+        solution: "Implemented shaped reward system with immediate penalties for wall collisions (-0.75) and small step penalties (-0.04) to discourage inefficient exploration, while maintaining large treasure reward (+1.0) for successful completion."
+      },
+      {
+        challenge: "Training was unstable with correlated sequential experiences",
+        solution: "Built experience replay buffer that stores (state, action, reward, next_state) tuples and samples randomly during training, breaking temporal correlations and stabilizing neural network convergence."
+      },
+      {
+        challenge: "Agent overfitted to specific starting positions during training",
+        solution: "Trained across diverse starting positions and validated performance on all 44 possible free cell locations, ensuring generalization rather than memorization of specific paths."
+      },
+      {
+        challenge: "Balancing exploration of new strategies vs exploitation of learned knowledge",
+        solution: "Implemented epsilon-greedy strategy with exponential decay schedule, starting at high exploration (ε=1.0) and gradually reducing to low exploration (ε=0.1) as the agent gains experience."
+      }
+    ],
+    outcomes: [
+      {
+        metric: "Win Rate",
+        impact: "100% success rate across all 44 possible starting positions after training"
+      },
+      {
+        metric: "Training Efficiency",
+        impact: "Convergence achieved within ~750 episodes, demonstrating efficient learning"
+      },
+      {
+        metric: "Behavioral Evolution",
+        impact: "Agent evolved from random exploration to optimal pathfinding with minimal steps to treasure"
+      },
+      {
+        metric: "Neural Network Architecture",
+        impact: "64-input → 164-hidden → 150-hidden → 4-output layers with PReLU activation"
+      },
+      {
+        metric: "Learning Methodology",
+        impact: "Successfully implemented Deep Q-Learning with experience replay, epsilon-greedy exploration, and reward shaping"
+      }
+    ],
+    techStack: [
+      "Python 3.8+",
+      "TensorFlow",
+      "Keras",
+      "NumPy",
+      "Matplotlib",
+      "Jupyter Notebook"
+    ],
+    links: {
+      github: "https://github.com/nwyrwas/CS-370-16865-M01-Current-Emerging-Trends-in-CS"
+    },
+    images: ["/intelligent-pirate-maze-agent.png"]
+  },
+  {
     id: "animal-shelter-analytics",
     title: "Animal Shelter Analytics Dashboard",
     shortDescription: "An interactive data analytics dashboard built with Dash and MongoDB that transforms static animal shelter data into actionable insights with real-time visualizations and geospatial mapping",
