@@ -8,6 +8,11 @@ A modern, production-ready portfolio website I built to showcase my software eng
 
 This portfolio website represents my approach to building professional, user-focused web applications. I designed and developed every aspect of this site from scratch, focusing on performance, accessibility, SEO, and a clean user experience that effectively communicates my technical capabilities to recruiters, hiring managers, and fellow developers.
 
+## Preview
+
+![Neural OS Preview 1](./public/neural-os-1.jpg)
+![Neural OS Preview 2](./public/neural-os-2.jpg)
+
 ### Why I Built This
 
 As a software engineering graduate and U.S. Marine Corps veteran transitioning into the tech industry, I needed a professional platform that:

@@ -79,13 +79,13 @@ export default async function ProjectPage({ params }: Props) {
               /* Two Images - Side by Side on Desktop, Stacked on Mobile */
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
                 {project.images.map((image, idx) => (
-                  <div key={idx} className="relative rounded-lg overflow-hidden shadow-lg">
+                  <div key={idx} className="relative rounded-lg overflow-hidden shadow-lg bg-gray-900">
                     <Image
                       src={image}
                       alt={`${project.title} screenshot ${idx + 1}`}
                       width={800}
                       height={450}
-                      className="w-full h-auto"
+                      className="w-full h-auto object-contain"
                       priority={idx === 0}
                     />
                   </div>
