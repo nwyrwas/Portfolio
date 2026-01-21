@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Nicholas Wyrwas Portfolio",
     images: [
       {
-        url: "https://yoursite.com/og-image.jpg",
+        url: "https://linkedin.com/in/nicholas-wyrwas",
         width: 1200,
         height: 630,
         alt: "Your Name Portfolio",
