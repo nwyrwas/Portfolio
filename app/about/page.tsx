@@ -98,19 +98,21 @@ export default function AboutPage() {
             <h2 className="heading-3 mb-6">Experience Highlights</h2>
 
             <div className="space-y-8 mb-12">
-              <div className="border-l-2 border-gray-300 pl-6 py-2">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Auto Care Technician
-                </h3>
-                <p className="text-sm text-gray-600 mb-3">
-                  Walmart • June 2025 – Present
-                </p>
-                <ul className="space-y-2 body text-gray-700">
-                  <li>• Performed vehicle maintenance services including oil changes, tire services, and safety inspections while adhering to strict procedural and safety standards.</li>
-                  <li>• Diagnosed mechanical issues using standardized checklists and tools, ensuring accurate service recommendations and quality outcomes.</li>
-                  <li>• Documented services and findings clearly and accurately to support customer communication and internal quality control.</li>
-                  <li>• Worked in a fast-paced, team-oriented environment requiring time management, attention to detail, and consistent execution under pressure.</li>
-                </ul>
+
+                <div className="border-l-2 border-gray-300 pl-6 py-2">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    Auto Care Technician
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Walmart • June 2025 – Present
+                  </p>
+                  <ul className="space-y-2 body text-gray-700">
+                    <li>• Performed vehicle maintenance services including oil changes, tire services, and safety inspections while adhering to strict procedural and safety standards.</li>
+                    <li>• Diagnosed mechanical issues using standardized checklists and tools, ensuring accurate service recommendations and quality outcomes.</li>
+                    <li>• Documented services and findings clearly and accurately to support customer communication and internal quality control.</li>
+                    <li>• Worked in a fast-paced, team-oriented environment requiring time management, attention to detail, and consistent execution under pressure.</li>
+                  </ul>
+                </div>
               </div>
 
               <div className="border-l-2 border-gray-300 pl-6 py-2">
@@ -120,9 +122,9 @@ export default function AboutPage() {
                   <li>• Contributed to the development of Marvel AI, an AI Teaching Assistant, and Sky AI, an AI Career Coach, to transform education and career growth through generative AI technology.</li>
                   <li>• Built features for Marvel AI using technologies such as LangChain, LlamaIndex, and Retrieval-Augmented Generation (RAG) workflows.</li>
                   <li>• Implemented structured knowledge graphs to dynamically link educational content to relevant topics for efficient retrieval.</li>
-                  <li>• Enhanced real-time semantic search and recommendations by leveraging OpenAI embeddings and Redis for Vector Search.</li>
-                  <li>• Collaborated with a global team to develop open-source AI tools that make education more accessible.</li>
-                  <li>• Deployed AI services using Google Cloud Run, monitored performance with Log Explorer, and refined outputs through LangSmith to optimize prompts and system outputs.</li>
+                  <li>•	Enhanced real-time semantic search and recommendations by leveraging OpenAI embeddings and Redis for Vector Search. </li>
+                  <li>•	Collaborated with a global team to develop open-source AI tools that make education more accessible. </li>
+                  <li>•	Deployed AI services using Google Cloud Run, monitored performance with Log Explorer, and refined outputs through LangSmith to optimize prompts and system outputs. </li>
                 </ul>
               </div>
 
@@ -130,26 +132,27 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Full-Stack Software Engineer (Internship)</h3>
                 <p className="text-sm text-gray-600 mb-3">Connectify • December 2024 - February 2025</p>
                 <ul className="space-y-2 body text-gray-700">
-                  <li>• Designed and developed scalable web applications using Django for back-end architecture and modern front-end frameworks like React and Vue.</li>
-                  <li>• Built and optimized RESTful APIs for seamless integration between user interfaces and server-side systems.</li>
-                  <li>• Collaborated with UI/UX designers, QA engineers, and DevOps teams to create intuitive, production-ready solutions.</li>
-                  <li>• Implemented and maintained CI/CD pipelines to automate testing, integration, and deployment workflows.</li>
-                  <li>• Enhanced application performance through caching strategies, asynchronous task management, and analytics integration.</li>
-                  <li>• Actively participated in agile practices, including sprint planning, daily stand-ups, and code reviews to deliver high-quality software.</li>
+                  <li>•	Designed and developed scalable web applications using Django for back-end architecture and modern front-end frameworks like React and Vue.</li>
+                  <li>•	Built and optimized RESTful APIs for seamless integration between user interfaces and server-side systems.</li>
+                  <li>•	Collaborated with UI/UX designers, QA engineers, and DevOps teams to create intuitive, production-ready solutions.</li>
+                  <li>•	Implemented and maintained CI/CD pipelines to automate testing, integration, and deployment workflows.</li>
+                  <li>•	Enhanced application performance through caching strategies, asynchronous task management, and analytics integration.</li>
+                  <li>•	Actively participated in agile practices, including sprint planning, daily stand-ups, and code reviews to deliver high-quality software. </li>
                 </ul>
               </div>
+            </div>
 
-              <div className="border-l-2 border-gray-300 pl-6 py-2">
+            <div className="border-l-2 border-gray-300 pl-6 py-2">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Manufacturing Process Leader - Training Department</h3>
                 <p className="text-sm text-gray-600 mb-3">Stryker Medical Cary • December 2019 - June 2023</p>
                 <ul className="space-y-2 body text-gray-700">
                   <li>• Led the development and implementation of comprehensive manufacturing training programs aligned with cGMP and ISO 13485 standards.</li>
                   <li>• Managed staff onboarding, documented reviews, and cross-functional training to ensure readiness and regulatory compliance.</li>
-                  <li>• Originated and approved Document Change Orders (DCOs), maintaining up-to-date SOPs and process documentation.</li>
-                  <li>• Audited production floors regularly to ensure adherence to FDA and ISO 13485 requirements.</li>
-                  <li>• Mentored new hires and junior team members, increasing retention and fostering a culture of accountability.</li>
-                  <li>• Collaborated with stakeholders to address compliance gaps, refine processes, and align training with evolving business goals.</li>
-                  <li>• Developed and tracked key performance indicators (KPIs) for onboarding efficiency, retention, and turnover analysis.</li>
+                  <li>•	Originated and approved Document Change Orders (DCOs), maintaining up-to-date SOPs and process documentation.</li>
+                  <li>•	Audited production floors regularly to ensure adherence to FDA and ISO 13485 requirements.</li>
+                  <li>•	Mentored new hires and junior team members, increasing retention and fostering a culture of accountability.</li>
+                  <li>•	Collaborated with stakeholders to address compliance gaps, refine processes, and align training with evolving business goals.</li>
+                  <li>•	Developed and tracked key performance indicators (KPIs) for onboarding efficiency, retention, and turnover analysis. </li>
                 </ul>
               </div>
             </div>
