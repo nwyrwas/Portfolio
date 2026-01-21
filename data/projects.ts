@@ -144,6 +144,133 @@ export const projects: Project[] = [
     images: ["/neural-os-1.jpg", "/neural-os-2.jpg"]
   },
   {
+    id: "ledgeriq",
+    title: "LedgerIQ",
+    shortDescription: "A full-stack personal finance application with AI-powered transaction categorization, real-time budget tracking, and interactive analytics for managing your money smarter",
+    featured: true,
+    year: "2025",
+    context: {
+      problem: "Managing personal finances is tedious. Users need to manually categorize transactions, track budgets across spreadsheets, and lack insights into spending patterns. Most finance apps are either too complex or lack intelligent automation.",
+      constraints: [
+        "Real-time transaction updates with optimistic UI",
+        "Automatic transaction categorization without manual input",
+        "Type-safe full-stack application with end-to-end validation",
+        "Responsive design supporting mobile, tablet, and desktop",
+        "Secure handling of financial data with SQL injection and XSS prevention"
+      ],
+      stakes: "Portfolio piece demonstrating modern full-stack development with Next.js 14, AI integration, real-time data visualization, and production-grade architecture"
+    },
+    role: {
+      title: "Full-Stack Software Engineering",
+      ownership: "Complete ownership: system architecture, database schema design, frontend UI/UX, backend API, AI integration, state management, and deployment",
+      teamSize: "Personal Project"
+    },
+    approach: {
+      overview: "Built a full-stack finance app using Next.js 14 App Router with TypeScript, Prisma ORM + PostgreSQL for data persistence, OpenAI GPT-4 for intelligent categorization, and shadcn/ui + Recharts for interactive visualizations and modern UI components.",
+      decisions: [
+        {
+          decision: "Next.js 14 App Router with Server Components",
+          rationale: "Server Components reduce JavaScript bundle size, improve initial page load, and enable better SEO while maintaining interactivity where needed with Client Components."
+        },
+        {
+          decision: "Prisma ORM with PostgreSQL",
+          rationale: "Prisma provides type-safe database queries, automatic migrations, and prevents SQL injection attacks. PostgreSQL offers robust relational data modeling for transactions, budgets, and goals."
+        },
+        {
+          decision: "OpenAI GPT-4 for transaction categorization",
+          rationale: "AI automatically categorizes transactions based on merchant names and descriptions, eliminating manual categorization work and learning from spending patterns."
+        },
+        {
+          decision: "Zustand for client-side state management",
+          rationale: "Lightweight alternative to Redux with simpler API, less boilerplate, and better TypeScript support for managing UI state like filters and selections."
+        },
+        {
+          decision: "React Query for server state",
+          rationale: "Handles caching, background refetching, optimistic updates, and error handling for API calls, keeping server and client state synchronized automatically."
+        },
+        {
+          decision: "shadcn/ui component library",
+          rationale: "Copy-paste components built on Radix UI primitives provide accessible, customizable UI elements without vendor lock-in or large dependencies."
+        },
+        {
+          decision: "Zod for end-to-end validation",
+          rationale: "TypeScript-first schema validation ensures data integrity from API requests to database operations, catching errors early and providing type inference."
+        },
+        {
+          decision: "Recharts for data visualization",
+          rationale: "React-native chart library with responsive design, composable API, and support for complex financial visualizations like spending trends and budget progress."
+        }
+      ],
+      alternatives: "Considered using Plaid API for bank integrations but focused on manual transaction entry first to demonstrate core features without external dependencies"
+    },
+    challenges: [
+      {
+        challenge: "Real-time budget tracking across multiple categories without performance issues",
+        solution: "Implemented Prisma aggregations to compute budget utilization directly in the database, combined with React Query caching to minimize redundant calculations and keep UI responsive."
+      },
+      {
+        challenge: "AI categorization needed to understand diverse merchant names and transaction descriptions",
+        solution: "Integrated OpenAI GPT-4 with custom prompts that analyze merchant names, transaction amounts, and descriptions to predict categories like Groceries, Dining, Transportation, with high accuracy."
+      },
+      {
+        challenge: "Optimistic UI updates for instant feedback while maintaining data consistency",
+        solution: "Used React Query's optimistic update pattern with automatic rollback on API errors, ensuring users see immediate changes while maintaining sync with server state."
+      },
+      {
+        challenge: "Type safety across frontend, API routes, and database queries",
+        solution: "Leveraged TypeScript with Prisma's generated types, Zod schemas for validation, and strict TypeScript config to catch type errors at compile time across the entire stack."
+      },
+      {
+        challenge: "Complex financial calculations for spending trends and budget forecasts",
+        solution: "Built aggregation pipelines using Prisma's groupBy and raw SQL queries for time-series analysis, combined with Recharts for interactive visualizations of trends and projections."
+      }
+    ],
+    outcomes: [
+      {
+        metric: "Type Safety",
+        impact: "96.7% TypeScript coverage with end-to-end type safety from database to UI"
+      },
+      {
+        metric: "Feature Set",
+        impact: "Complete CRUD for transactions, budgets, and goals with AI categorization and analytics"
+      },
+      {
+        metric: "Data Visualization",
+        impact: "Interactive Recharts dashboards showing spending trends, budget progress, and financial forecasts"
+      },
+      {
+        metric: "Performance",
+        impact: "Server Components, code splitting, lazy loading, and optimistic UI for instant feedback"
+      },
+      {
+        metric: "Security",
+        impact: "Prisma prevents SQL injection, XSS protection, CSRF tokens, and secure session handling"
+      },
+      {
+        metric: "User Experience",
+        impact: "Responsive mobile-first design, dark mode, real-time updates, and accessible UI components"
+      }
+    ],
+    techStack: [
+      "Next.js 14",
+      "TypeScript",
+      "Prisma ORM",
+      "PostgreSQL",
+      "OpenAI GPT-4",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Zustand",
+      "React Query",
+      "Recharts",
+      "Framer Motion",
+      "Zod"
+    ],
+    links: {
+      github: "https://github.com/nwyrwas/LedgerIq"
+    },
+    images: ["/ledgeriq_images/ledgeriq_homepage.jpg", "/ledgeriq_images/ledgeriq_dashboard.jpg", "/ledgeriq_images/ledgeriq_ai_insights.jpg"]
+  },
+  {
     id: "intelligent-pirate-maze-agent",
     title: "Intelligent Pirate Maze Agent",
     shortDescription: "An autonomous AI agent that uses Deep Q-Learning to navigate an 8×8 maze environment, achieving 100% success rate across all starting positions through reinforcement learning",
