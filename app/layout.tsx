@@ -11,18 +11,25 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name – Senior Software Engineer",
-  description: "Senior software engineer specializing in scalable backend systems, API design, and developer experience. Portfolio and case studies.",
-  keywords: ["software engineer", "full-stack developer", "backend engineer", "API design", "scalable systems"],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
+  title: "Nicholas Wyrwas – Aspiring Software Engineer | Marine Corps Veteran",
+  description: "Software engineering graduate and U.S. Marine Corps veteran focused on building reliable, scalable applications. Portfolio showcasing projects, technical growth, and problem-solving approach.",
+  keywords: ["software engineer",
+    "software engineering graduate",
+    "full-stack developer",
+    "web development",
+    "backend development",
+    "frontend development",
+    "API development",
+    "Marine Corps veteran",],
+  authors: [{ name: "Nicholas Wyrwas" }],
+  creator: "Nicholas Wyrwas",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yoursite.com",
-    title: "Your Name – Senior Software Engineer",
-    description: "Senior software engineer specializing in scalable backend systems, API design, and developer experience.",
-    siteName: "Your Name Portfolio",
+    url: "https://linkedin.com/in/nicholas-wyrwas",
+    title: "Nicholas Wyrwas - Software Engineer",
+    description: "Software engineering graduate and Marine Corps veteran building modern web applications with a focus on reliability, performance, and continuous learning.",
+    siteName: "Nicholas Wyrwas Portfolio",
     images: [
       {
         url: "https://yoursite.com/og-image.jpg",
@@ -34,9 +41,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name – Senior Software Engineer",
-    description: "Senior software engineer specializing in scalable backend systems, API design, and developer experience.",
-    images: ["https://yoursite.com/og-image.jpg"],
+    title: "Nicholas Wyrwas – Software Engineer",
+    description: "Software engineering graduate and Marine Corps veteran focused on building reliable, well-structured applications.",
+    images: ["https://github.com/nwyrwas"],
   },
   robots: {
     index: true,

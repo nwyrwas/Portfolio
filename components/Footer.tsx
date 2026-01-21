@@ -9,9 +9,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-2">Your Name</h3>
+            <h3 className="text-lg font-bold text-gray-900 mb-2">Nicholas Wyrwas</h3>
             <p className="text-sm text-gray-600">
-              Senior Software Engineer specializing in scalable systems and API design.
+              Software engineering graduate and U.S. Marine Corps veteran focused on building reliable, well-structured applications using modern technologies and APIs.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/nwyrwas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-gray-600 hover:text-primary-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-sm inline-flex items-center gap-2"
@@ -73,7 +73,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/nicholas-wyrwas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-gray-600 hover:text-primary-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-sm inline-flex items-center gap-2"
@@ -86,7 +86,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:nick.wyrwas@outlook.com"
                   className="text-sm text-gray-600 hover:text-primary-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-sm inline-flex items-center gap-2"
                 >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
@@ -102,7 +102,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-gray-200 text-center">
           <p className="text-sm text-gray-500">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Nick Wyrwas. All rights reserved.
           </p>
         </div>
       </div>

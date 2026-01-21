@@ -20,12 +20,12 @@ export default function Navigation() {
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <nav className="container-custom" aria-label="Main navigation">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo/Name */}
+          {/* Nick Wyrwas */}
           <Link
             href="/"
             className="text-xl font-bold text-gray-900 hover:text-primary-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 rounded-sm"
           >
-            Your Name
+            Nick Wyrwas
           </Link>
 
           {/* Desktop Navigation */}

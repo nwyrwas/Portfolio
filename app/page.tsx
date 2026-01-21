@@ -13,12 +13,11 @@ export default function Home() {
       <Section className="pt-20 md:pt-32">
         <div className="max-w-4xl">
           <h1 className="heading-1 mb-6">
-            I build resilient systems that scale with your business
+            I build reliable software with a focus on clarity and scale
           </h1>
           <p className="body-large mb-8 max-w-2xl">
-            Senior software engineer specializing in distributed systems, API design, and high-performance backend infrastructure.
-            I turn complex technical challenges into elegant, maintainable solutions.
-          </p>
+            Software engineering graduate and U.S. Marine Corps veteran focused on building well-structured applications,
+            designing clean APIs, and solving complex problems with practical, maintainable solutions. </p>
           <div className="flex flex-wrap gap-4">
             <Button href="/projects" size="lg">
               View My Work
@@ -33,20 +32,20 @@ export default function Home() {
         <div className="mt-16 pt-8 border-t border-gray-200">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">6+</div>
-              <div className="text-sm text-gray-600">Years Experience</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">B.S</div>
+              <div className="text-sm text-gray-600">Software Engineering</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">50M+</div>
-              <div className="text-sm text-gray-600">Requests/Day</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">United States Marine Corps</div>
+              <div className="text-sm text-gray-600">Veteran</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">99.99%</div>
-              <div className="text-sm text-gray-600">Uptime Achieved</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">10+</div>
+              <div className="text-sm text-gray-600">Academic and Personal Projects</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">$200k+</div>
-              <div className="text-sm text-gray-600">ARR Impact</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">%100</div>
+              <div className="text-sm text-gray-600">Commitment to Growth and Development</div>
             </div>
           </div>
         </div>
@@ -57,7 +56,7 @@ export default function Home() {
         <div className="mb-12">
           <h2 className="heading-2 mb-4">Featured Projects</h2>
           <p className="body-large max-w-2xl">
-            Selected work demonstrating technical depth, business impact, and senior-level engineering judgment.
+            Selected projects demonstrating problem-solving ability, technical fundamentals, and thoughtful engineering decisions.
           </p>
         </div>
 
@@ -132,25 +131,39 @@ export default function Home() {
       <Section>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="heading-2 mb-4">Technical Expertise</h2>
+            <h2 className="heading-2 mb-4">Technical Foundation</h2>
+
             <p className="body-large mb-6">
-              I specialize in building scalable backend systems, designing robust APIs, and optimizing performance for high-traffic applications.
+              I am an early-career software engineer with a strong foundation in backend development, API design, and full-stack application building.
             </p>
+
             <p className="body mb-8">
-              My work focuses on the invisible infrastructure that makes products feel fast and reliable — the type of challenges that require deep technical knowledge and careful trade-offs between performance, cost, and maintainability.
+              I enjoy working on the core systems behind applications, where clean design, security awareness, and thoughtful trade-offs contribute to software that is reliable and easy to maintain as it evolves.
             </p>
+
             <Button href="/skills" variant="text" size="md">
               View Full Skill Set →
             </Button>
           </div>
 
           <div className="space-y-6">
+            {/* Backend & Core Programming */}
             <div>
               <h3 className="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">
-                Backend & Infrastructure
+                Backend & Core Programming
               </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Experience developing backend services and application logic with an emphasis on correctness, testing, and clear interfaces.
+              </p>
               <div className="flex flex-wrap gap-2">
-                {["Node.js", "Go", "Python", "PostgreSQL", "Redis", "Kafka", "Docker", "Kubernetes"].map((skill) => (
+                {[
+                  "Python",
+                  "Node.js",
+                  "RESTful APIs",
+                  "Authentication Basics",
+                  "PostgreSQL",
+                  "Unit Testing"
+                ].map((skill) => (
                   <span
                     key={skill}
                     className="px-3 py-1.5 text-sm font-medium bg-white border border-gray-300 text-gray-700 rounded-lg"
@@ -161,12 +174,22 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Frontend & Full-Stack Development */}
             <div>
               <h3 className="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">
-                Frontend & APIs
+                Frontend & Full-Stack Development
               </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Building responsive user interfaces and connecting them to backend systems using modern JavaScript frameworks.
+              </p>
               <div className="flex flex-wrap gap-2">
-                {["TypeScript", "React", "Next.js", "GraphQL", "REST", "gRPC"].map((skill) => (
+                {[
+                  "TypeScript",
+                  "React",
+                  "Next.js",
+                  "HTML",
+                  "CSS"
+                ].map((skill) => (
                   <span
                     key={skill}
                     className="px-3 py-1.5 text-sm font-medium bg-white border border-gray-300 text-gray-700 rounded-lg"
@@ -177,12 +200,22 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Tooling, Cloud & Development Practices */}
             <div>
               <h3 className="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wide">
-                Cloud & DevOps
+                Tooling, Cloud & Development Practices
               </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Familiar with modern development workflows, containerization, and basic cloud deployment concepts used in real-world teams.
+              </p>
               <div className="flex flex-wrap gap-2">
-                {["AWS", "Terraform", "CI/CD", "Monitoring", "Performance"].map((skill) => (
+                {[
+                  "Git & GitHub",
+                  "Docker",
+                  "CI/CD Fundamentals",
+                  "GitHub Actions",
+                  "Cloud Deployment Basics"
+                ].map((skill) => (
                   <span
                     key={skill}
                     className="px-3 py-1.5 text-sm font-medium bg-white border border-gray-300 text-gray-700 rounded-lg"
@@ -196,12 +229,14 @@ export default function Home() {
         </div>
       </Section>
 
+
       {/* CTA Section */}
       <Section background="gray">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="heading-2 mb-4">Let's Work Together</h2>
           <p className="body-large mb-8">
-            I'm currently open to senior or staff engineer roles at growth-stage companies working on infrastructure, developer tools, or B2B SaaS platforms.
+            I’m currently seeking entry-level or early-career software engineering roles where I can contribute meaningfully,
+            continue learning, and grow within a strong engineering team.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button href="/contact" size="lg">

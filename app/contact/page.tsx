@@ -37,8 +37,8 @@ export default function ContactPage() {
           <div className="mb-12 text-center">
             <h1 className="heading-1 mb-6">Let's Talk</h1>
             <p className="body-large">
-              I'm currently open to senior or staff engineer roles at growth-stage companies working on infrastructure,
-              developer tools, or B2B SaaS platforms.
+              I’m a software engineering graduate and U.S. Marine Corps veteran seeking entry-level or early-career
+              software engineering roles where I can contribute, learn quickly, and grow within a strong technical team.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export default function ContactPage() {
               <h2 className="heading-4 mb-6">Best Ways to Reach Me</h2>
               <div className="space-y-4">
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:nick.wyrwas@outlook.com"
                   className="flex items-center gap-4 p-4 bg-white border border-gray-200 rounded-lg hover:border-primary-500 hover:bg-primary-50 transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
                 >
                   <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center group-hover:bg-primary-200 transition-colors">
@@ -68,12 +68,12 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Email</div>
-                    <div className="text-sm text-gray-600">your.email@example.com</div>
+                    <div className="text-sm text-gray-600">nick.wyrwas@outlook.com</div>
                   </div>
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/nicholas-wyrwas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 bg-white border border-gray-200 rounded-lg hover:border-primary-500 hover:bg-primary-50 transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
@@ -85,12 +85,12 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">LinkedIn</div>
-                    <div className="text-sm text-gray-600">linkedin.com/in/yourusername</div>
+                    <div className="text-sm text-gray-600">linkedin.com/in/nicholas-wyrwas</div>
                   </div>
                 </a>
 
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/nwyrwas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 bg-white border border-gray-200 rounded-lg hover:border-primary-500 hover:bg-primary-50 transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">GitHub</div>
-                    <div className="text-sm text-gray-600">github.com/yourusername</div>
+                    <div className="text-sm text-gray-600">github.com/nwyrwas</div>
                   </div>
                 </a>
               </div>
@@ -114,8 +114,8 @@ export default function ContactPage() {
               <div className="mt-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
                 <h3 className="font-semibold text-gray-900 mb-2">Response Time</h3>
                 <p className="text-sm text-gray-600">
-                  I typically respond to messages within 24-48 hours on weekdays. For urgent inquiries, LinkedIn messages
-                  tend to get the fastest response.
+                  I typically respond within 24–48 hours on weekdays. LinkedIn is the most reliable way to reach me for
+                  time-sensitive opportunities.
                 </p>
               </div>
             </div>
@@ -140,7 +140,7 @@ export default function ContactPage() {
                     />
                   </svg>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Message Sent!</h3>
-                  <p className="text-gray-600 mb-4">Thanks for reaching out. I'll get back to you soon.</p>
+                  <p className="text-gray-600 mb-4">Thank you for reaching out. I’ll review your message and respond as soon as possible.</p>
                   <Button onClick={() => setStatus("idle")} variant="secondary">
                     Send Another Message
                   </Button>
@@ -159,7 +159,7 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                      placeholder="Your name"
+                      placeholder="Nicholas Wyrwas"
                     />
                   </div>
 
@@ -175,7 +175,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                      placeholder="your.email@example.com"
+                      placeholder="nick.wyrwas@outlook.com"
                     />
                   </div>
 
@@ -191,7 +191,7 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
-                      placeholder="Tell me about your opportunity or project..."
+                      placeholder="Briefly describe the role, opportunity, or reason for reaching out..."
                     />
                   </div>
 

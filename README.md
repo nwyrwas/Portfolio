@@ -1,225 +1,268 @@
-# Professional Portfolio
+# Professional Portfolio Website
 
-A world-class personal portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. Designed to communicate credibility, competence, and professional maturity to technical recruiters, hiring managers, and executives.
+A modern, production-ready portfolio website I built to showcase my software engineering projects, technical skills, and professional background. This portfolio demonstrates my capabilities in full-stack development, modern web technologies, and clean, maintainable code architecture.
 
-## Features
+🔗 **Live Site**: [nickwyrwas.com](https://nickwyrwas.com)
 
-- **Modern Tech Stack**: Next.js 15 (App Router), TypeScript, Tailwind CSS
-- **Performance Optimized**: Fast load times, optimized assets, SEO-friendly
-- **Fully Responsive**: Mobile-first design that works on all devices
-- **Accessible**: WCAG-compliant with keyboard navigation and screen reader support
-- **Type-Safe**: Full TypeScript coverage for reliability
-- **SEO Optimized**: Metadata, Open Graph tags, sitemap, robots.txt
-- **Easy to Customize**: Structured data files for projects and skills
+## About This Project
+
+This portfolio website represents my approach to building professional, user-focused web applications. I designed and developed every aspect of this site from scratch, focusing on performance, accessibility, SEO, and a clean user experience that effectively communicates my technical capabilities to recruiters, hiring managers, and fellow developers.
+
+### Why I Built This
+
+As a software engineering graduate and U.S. Marine Corps veteran transitioning into the tech industry, I needed a professional platform that:
+- Demonstrates my technical skills through practical implementation
+- Showcases my projects with detailed case studies
+- Provides an accessible, performant user experience
+- Reflects my commitment to clean code and best practices
+- Serves as a living example of my front-end and full-stack capabilities
+
+## Tech Stack
+
+This portfolio is built with a modern, industry-standard technology stack:
+
+### Core Technologies
+- **[Next.js 15](https://nextjs.org/)** - React framework with App Router for optimal performance and SEO
+- **[React 19](https://react.dev/)** - Component-based UI library
+- **[TypeScript 5.7](https://www.typescriptlang.org/)** - Type-safe JavaScript for reliability and maintainability
+- **[Tailwind CSS 3.4](https://tailwindcss.com/)** - Utility-first CSS framework for rapid, responsive design
+
+### Development Tools
+- **ESLint** - Code quality and consistency
+- **PostCSS & Autoprefixer** - CSS processing and browser compatibility
+- **Vercel** - Deployment platform with automatic HTTPS, CDN, and edge optimization
+
+### Key Features I Implemented
+
+#### 🎨 Design & User Experience
+- **Mobile-First Responsive Design** - Fully responsive layout that works seamlessly across all device sizes
+- **Custom Design System** - Consistent typography, spacing, and color palette defined in Tailwind config
+- **Accessibility (WCAG AA)** - Keyboard navigation, ARIA labels, focus indicators, screen reader support
+- **Performance Optimized** - Fast page loads with Next.js automatic code splitting and optimization
+
+#### 🔍 SEO & Discoverability
+- **Comprehensive Metadata** - Open Graph tags, Twitter cards, semantic HTML
+- **Dynamic Sitemap** - XML sitemap for search engine crawling
+- **Robots.txt Configuration** - Search engine directives
+- **Structured URLs** - Clean, descriptive route structure
+
+#### 💻 Architecture & Code Quality
+- **Type-Safe Codebase** - 100% TypeScript coverage across all components and pages
+- **Component-Based Architecture** - Reusable UI components (Button, Card, Section, Navigation, Footer)
+- **Structured Data Management** - Centralized project data with TypeScript interfaces
+- **Clean Code Principles** - DRY, separation of concerns, semantic naming
+
+#### 📄 Content Strategy
+- **Project Case Studies** - Detailed technical breakdowns with context, approach, challenges, and outcomes
+- **Skills Showcase** - Organized by capability area (backend, frontend, tooling/cloud)
+- **Professional Narrative** - About page emphasizing experience and values, not just biography
+- **Clear CTAs** - Strategic calls-to-action guiding visitors to contact or view work
 
 ## Project Structure
 
 ```
 portfolio/
-├── app/                    # Next.js app directory
-│   ├── about/             # About page
-│   ├── contact/           # Contact page with form
-│   ├── projects/          # Projects listing and detail pages
-│   ├── skills/            # Skills and expertise page
-│   ├── globals.css        # Global styles
-│   ├── layout.tsx         # Root layout with metadata
-│   └── page.tsx           # Homepage
-├── components/            # Reusable React components
-│   ├── Button.tsx
-│   ├── Card.tsx
-│   ├── Footer.tsx
-│   ├── Navigation.tsx
-│   └── Section.tsx
-├── data/                  # Content and data
-│   └── projects.ts        # Project case studies data
-├── public/                # Static assets
-│   ├── robots.txt
-│   └── sitemap.xml
-└── package.json
+├── app/                          # Next.js App Router
+│   ├── about/                   # About page - professional background
+│   │   └── page.tsx
+│   ├── contact/                 # Contact page with form
+│   │   └── page.tsx
+│   ├── projects/                # Projects listing and individual case studies
+│   │   ├── [id]/
+│   │   │   └── page.tsx        # Dynamic project detail pages
+│   │   └── page.tsx            # All projects listing
+│   ├── skills/                  # Skills and technical expertise
+│   │   └── page.tsx
+│   ├── globals.css              # Global styles and CSS variables
+│   ├── layout.tsx               # Root layout with SEO metadata
+│   └── page.tsx                 # Homepage with hero, featured projects, overview
+│
+├── components/                   # Reusable React components
+│   ├── Button.tsx               # Polymorphic button component (link/button)
+│   ├── Card.tsx                 # Container component with hover effects
+│   ├── Footer.tsx               # Site footer with social links
+│   ├── Navigation.tsx           # Responsive navigation with mobile menu
+│   └── Section.tsx              # Layout section with background variants
+│
+├── data/                         # Content and data layer
+│   └── projects.ts              # Project case studies with TypeScript interfaces
+│
+├── public/                       # Static assets
+│   ├── robots.txt               # Search engine directives
+│   └── sitemap.xml              # Site structure for SEO
+│
+├── package.json                  # Dependencies and scripts
+├── tsconfig.json                 # TypeScript configuration
+├── tailwind.config.ts            # Tailwind CSS customization
+├── postcss.config.mjs            # PostCSS configuration
+└── next.config.ts                # Next.js configuration
 ```
 
-## Getting Started
+## Featured Content
+
+### Project Case Studies
+
+I've documented my projects using a structured approach that demonstrates technical depth and business context:
+
+- **Context**: Problem statement, constraints, and why the project matters
+- **Role**: My ownership and responsibilities
+- **Approach**: Technical decisions with clear rationale
+- **Challenges**: Specific problems encountered and how I solved them
+- **Outcomes**: Measurable results and technical achievements
+
+**Current Featured Project: NeuralOS**
+- Full-stack AI-powered notes application
+- Tech stack: React 19, FastAPI, OpenAI (GPT-4o-mini, text-embedding-3-small), Pinecone, Supabase
+- Features: Semantic search, RAG (Retrieval-Augmented Generation), multi-provider authentication
+- 1,795 lines of JavaScript/React, full REST API implementation
+
+### Skills Organization
+
+Skills are grouped by capability area rather than proficiency levels, focusing on what I can build:
+
+- **Backend & Core Programming**: Python, Node.js, RESTful APIs, PostgreSQL, Authentication, Testing
+- **Frontend & Full-Stack Development**: TypeScript, React, Next.js, HTML, CSS, Responsive Design
+- **Tooling, Cloud & DevOps**: Git/GitHub, Docker, CI/CD, GitHub Actions, Cloud Deployment
+
+## Technical Implementation Highlights
+
+### Performance Optimizations
+- ✅ Next.js automatic code splitting and tree shaking
+- ✅ Optimized font loading with `next/font`
+- ✅ Image optimization ready with Next.js Image component
+- ✅ Static site generation (SSG) for fast page loads
+
+### Accessibility Features
+- ✅ Semantic HTML5 structure (header, nav, main, section, footer)
+- ✅ ARIA labels and landmarks
+- ✅ Keyboard navigation support with visible focus indicators
+- ✅ Sufficient color contrast ratios (WCAG AA compliance)
+- ✅ Screen reader friendly component structure
+
+### Responsive Design
+- ✅ Mobile-first CSS with Tailwind breakpoints (sm, md, lg, xl)
+- ✅ Flexible grid layouts that adapt to screen size
+- ✅ Touch-friendly interactive elements
+- ✅ Tested across devices and browsers
+
+### Type Safety
+- ✅ TypeScript interfaces for all data structures
+- ✅ Prop types for all React components
+- ✅ Type-safe routing and navigation
+- ✅ Compile-time error detection
+
+## Local Development
 
 ### Prerequisites
+- Node.js 18 or higher
+- npm, yarn, or pnpm package manager
 
-- Node.js 18+
-- npm, yarn, or pnpm
+### Getting Started
 
-### Installation
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   cd portfolio
+   ```
 
-1. Clone the repository
-2. Install dependencies:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm install
-```
+3. **Run development server**
+   ```bash
+   npm run dev
+   ```
 
-3. Run the development server:
+4. **Open in browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-```bash
-npm run dev
-```
+### Available Scripts
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Customization Guide
-
-### 1. Update Personal Information
-
-**Navigation & Footer** (`components/Navigation.tsx`, `components/Footer.tsx`):
-- Replace "Your Name" with your actual name
-- Update social media links (GitHub, LinkedIn)
-- Update email address
-
-**Metadata** (`app/layout.tsx`):
-- Update site title and description
-- Add your Open Graph image URL
-- Update meta tags with your information
-
-### 2. Add Your Projects
-
-Edit `data/projects.ts`:
-- Add or modify project case studies
-- Include context, approach, challenges, and outcomes
-- Set `featured: true` for projects to appear on homepage
-- Update tech stack arrays
-
-### 3. Update About Page
-
-Edit `app/about/page.tsx`:
-- Write your professional narrative
-- Update experience highlights
-- Modify education and background
-- Customize your values and principles
-
-### 4. Customize Skills
-
-Edit `app/skills/page.tsx`:
-- Update skill categories and lists
-- Modify core competencies
-- Adjust highlighted expertise areas
-
-### 5. Add Your Resume
-
-Place your resume PDF in the `public/` folder as `resume.pdf`, or update the download links in:
-- `components/Navigation.tsx`
-- `app/page.tsx`
-
-### 6. Update Design System
-
-Edit `tailwind.config.ts`:
-- Customize colors (primary brand color)
-- Adjust spacing scale
-- Modify font choices
-
-Edit `app/globals.css`:
-- Customize CSS variables
-- Adjust typography styles
-- Modify component utilities
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Create optimized production build
+- `npm start` - Run production server (requires build first)
+- `npm run lint` - Run ESLint for code quality checks
 
 ## Deployment
 
-### Vercel (Recommended)
+This portfolio is deployed on **Vercel**, leveraging their optimized Next.js hosting:
 
-1. Push your code to GitHub
-2. Import your repository in [Vercel](https://vercel.com)
-3. Deploy with one click
+- ✅ Automatic HTTPS
+- ✅ Global CDN distribution
+- ✅ Edge network optimization
+- ✅ Continuous deployment from Git
+- ✅ Custom domain with automatic SSL (nickwyrwas.com)
 
-### Netlify
+### Deployment Steps
 
-1. Push your code to GitHub
-2. Connect your repository in [Netlify](https://netlify.com)
-3. Build command: `npm run build`
-4. Publish directory: `.next`
+1. Push code to GitHub repository
+2. Connect repository to Vercel
+3. Vercel automatically detects Next.js and configures build settings
+4. Deploy with a single click
+5. Configure custom domain in Vercel dashboard
 
-### Other Platforms
+## Lessons Learned & Development Process
 
-Build the production bundle:
+Building this portfolio taught me several valuable lessons:
 
-```bash
-npm run build
-```
+1. **Design Systems Matter**: Establishing a consistent design system early (typography scale, color palette, spacing) made development much faster and the final product more cohesive.
 
-Start the production server:
+2. **Type Safety Saves Time**: TypeScript caught numerous potential bugs before runtime, especially when refactoring component interfaces.
 
-```bash
-npm start
-```
+3. **Mobile-First Is Essential**: Starting with mobile layouts and progressively enhancing for larger screens resulted in better responsive design than desktop-first approaches.
 
-## Performance Optimization
+4. **SEO Requires Intentionality**: Search engine optimization isn't automatic - it requires deliberate implementation of metadata, semantic HTML, sitemaps, and structured content.
 
-- Images: Use Next.js Image component for automatic optimization
-- Fonts: Using `next/font` for optimized font loading
-- Code splitting: Automatic with Next.js App Router
-- Caching: Configure headers in `next.config.ts`
+5. **Content Strategy Before Code**: Writing project case studies and planning content structure before building pages prevented numerous rewrites and architectural changes.
 
-## SEO Checklist
+## Future Enhancements
 
-- [x] Metadata in all pages
-- [x] Open Graph tags
-- [x] Sitemap.xml
-- [x] Robots.txt
-- [x] Semantic HTML
-- [x] Descriptive URLs
-- [ ] Add your actual Open Graph image (`public/og-image.jpg`)
-- [ ] Submit sitemap to Google Search Console
+Planned improvements and features I'm considering:
 
-## Accessibility Features
+- [ ] Blog section for technical writing and development insights
+- [ ] Project image galleries with Next.js Image optimization
+- [ ] Contact form backend with email service integration
+- [ ] Dark mode toggle with theme persistence
+- [ ] Advanced analytics for visitor insights
+- [ ] Automated testing with Jest and React Testing Library
+- [ ] Continuous integration pipeline with GitHub Actions
+- [ ] Performance monitoring and Core Web Vitals tracking
 
-- Keyboard navigation support
-- ARIA labels and landmarks
-- Focus indicators
-- Screen reader friendly
-- Sufficient color contrast (WCAG AA)
-- Responsive to `prefers-reduced-motion`
+## What Makes This Portfolio Different
 
-## Content Strategy
+Unlike template-based portfolios, this project demonstrates:
 
-### Homepage
-- Value proposition and positioning
-- Credibility markers (years, metrics)
-- Featured projects
-- Skills overview
-- Clear CTAs
+- **Original Design & Implementation**: Every component built from scratch, not copied from templates
+- **Production-Ready Code**: Clean, type-safe, maintainable code following industry best practices
+- **Technical Depth**: Complex features like dynamic routing, responsive design, and SEO optimization
+- **Content Strategy**: Thoughtful information architecture focused on recruiter/hiring manager needs
+- **Live Deployment**: Fully deployed on custom domain with proper SSL, CDN, and performance optimization
 
-### Projects
-- Problem → Solution → Impact structure
-- Technical depth with business context
-- Measurable outcomes
-- Tech stack visibility
+## Contact & Connect
 
-### About
-- Professional narrative (not biography)
-- Experience highlights
-- Values and principles
-- What you're looking for
+I'm actively seeking software engineering opportunities where I can contribute to meaningful projects and continue growing as a developer.
 
-### Skills
-- Grouped by capability
-- No proficiency ratings
-- Core competencies highlighted
-- Technology choices explained
-
-## Maintenance
-
-### Adding New Projects
-
-1. Add project data to `data/projects.ts`
-2. Follow the existing structure
-3. Include all required fields
-4. Set `featured: true` if appropriate
-
-### Updating Content
-
-- Projects: Edit `data/projects.ts`
-- About: Edit `app/about/page.tsx`
-- Skills: Edit `app/skills/page.tsx`
-- Homepage: Edit `app/page.tsx`
+- **Website**: [nickwyrwas.com](https://nickwyrwas.com)
+- **Email**: [your-email@example.com]
+- **GitHub**: [github.com/nwyrwas](https://github.com/nwyrwas)
+- **LinkedIn**: [Your LinkedIn URL]
 
 ## License
 
-This is a personal portfolio template. Feel free to use it for your own portfolio, but please don't claim it as your own design work.
+This project is available as a reference for my portfolio work. While the code is open source and available for learning purposes, please don't directly copy this portfolio for your own use without significant modification. Build something that represents your unique experience and skills.
 
-## Credits
+## Acknowledgments
 
-Built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [TypeScript](https://www.typescriptlang.org/).
+Built with:
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [Vercel](https://vercel.com/) - Deployment platform
+
+---
+
+**Built by Nick Wyrwas** | Software Engineering Graduate | U.S. Marine Corps Veteran
+
+*This portfolio represents not just my projects, but my commitment to clean code, user-centered design, and continuous learning in software engineering.*
