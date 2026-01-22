@@ -944,7 +944,7 @@ export const projects: Project[] = [
         metric: "SMS Notifications",
         impact: "Automated alerts for low inventory levels sent via SMS when user grants permission"
       }
-    },
+    ],
     techStack: [
       "Java",
       "Android SDK",
@@ -1067,7 +1067,7 @@ export const projects: Project[] = [
         metric: "Presentation Materials",
         impact: "Stakeholder slide deck and speaker notes for communicating security value and risk tradeoffs"
       }
-    },
+    ],
     techStack: [
       "CERT C/C++ Standards",
       "OWASP Top 10",
