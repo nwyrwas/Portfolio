@@ -16,10 +16,10 @@ export default function Home() {
             Computer Science Graduate • USMC Veteran
           </div>
           <h1 className="heading-1 mb-6">
-            Full-Stack Software Engineer Building Intelligent, Scalable Solutions
+            Building Full-Stack Applications and Exploring AI Engineering
           </h1>
           <p className="body-large mb-8 max-w-2xl">
-            I design and develop robust applications across the full stack—from AI-powered systems and secure backend APIs to responsive frontends and embedded IoT devices. With expertise spanning machine learning, mobile development, and cybersecurity, I bring a disciplined, mission-focused approach to solving complex technical challenges.
+            I'm a recent Computer Science graduate with hands-on experience building web applications, mobile apps, and AI-powered systems through academic projects and internships. I bring a disciplined, mission-focused approach to learning and problem-solving, eager to contribute to real-world software projects.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button href="/projects" size="lg">
@@ -157,17 +157,16 @@ export default function Home() {
       <Section>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="heading-2 mb-4">Technical Foundation</h2>
+            <h2 className="heading-2 mb-4">Technical Background</h2>
 
             <p className="body-large mb-6">
-              I’m a recent software engineering graduate with a solid foundation in backend development,
-              API design, and building full-stack applications through academic and personal projects.
+              I'm a recent Computer Science graduate with practical experience in full-stack development,
+              API design, and building applications through coursework, personal projects, and recent internships.
             </p>
 
             <p className="body mb-8">
-              I’m particularly interested in the core systems behind applications—where clear structure,
-              security fundamentals, and thoughtful design decisions help software remain reliable and
-              maintainable as it grows.
+              I'm drawn to backend systems and the fundamentals of how software works—database design, API architecture,
+              and writing code that's clean, secure, and maintainable. I'm eager to keep learning and applying these skills professionally.
             </p>
             <Button href="/skills" variant="text" size="md">
               View Full Skill Set →
@@ -181,7 +180,7 @@ export default function Home() {
                 Backend & Core Programming
               </h3>
               <p className="text-sm text-gray-600 mb-3">
-                Experience developing backend services and application logic with an emphasis on correctness, testing, and clear interfaces.
+                Building backend services and APIs through coursework and projects, learning best practices for testing, security, and clean code.
               </p>
               <div className="flex flex-wrap gap-2">
                 {[
@@ -234,7 +233,7 @@ export default function Home() {
                 Tooling, Cloud & Development Practices
               </h3>
               <p className="text-sm text-gray-600 mb-3">
-                Familiar with modern development workflows, containerization, and basic cloud deployment concepts used in real-world teams.
+                Learning modern development workflows including version control, containerization, CI/CD pipelines, and cloud deployment basics.
               </p>
               <div className="flex flex-wrap gap-2">
                 {[
@@ -263,8 +262,8 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="heading-2 mb-4">Let's Work Together</h2>
           <p className="body-large mb-8">
-            I’m currently seeking entry-level or early-career software engineering roles where I can contribute meaningfully,
-            continue learning, and grow within a strong engineering team.
+            I'm seeking entry-level software engineering opportunities where I can learn from experienced engineers,
+            contribute to real projects, and grow my skills in a collaborative team environment.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button href="/contact" size="lg">

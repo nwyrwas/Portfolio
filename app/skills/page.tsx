@@ -11,16 +11,16 @@ const skillCategories = [
     category: "Programming & Frameworks",
     icon: "💻",
     skills: [
-      { name: "Python", level: "Advanced", years: "3+" },
-      { name: "JavaScript", level: "Advanced", years: "3+" },
+      { name: "Python", level: "Proficient", years: "3+" },
+      { name: "JavaScript", level: "Proficient", years: "3+" },
       { name: "TypeScript", level: "Intermediate", years: "2+" },
       { name: "Java", level: "Intermediate", years: "2+" },
       { name: "C", level: "Intermediate", years: "2+" },
       { name: "C++", level: "Intermediate", years: "2+" },
-      { name: "HTML", level: "Advanced", years: "3+" },
-      { name: "CSS", level: "Advanced", years: "3+" },
-      { name: "React", level: "Advanced", years: "2+" },
-      { name: "Node.js", level: "Advanced", years: "2+" },
+      { name: "HTML", level: "Proficient", years: "3+" },
+      { name: "CSS", level: "Proficient", years: "3+" },
+      { name: "React", level: "Proficient", years: "2+" },
+      { name: "Node.js", level: "Proficient", years: "2+" },
       { name: "Express", level: "Intermediate", years: "2+" },
       { name: "Angular", level: "Intermediate", years: "1+" },
       { name: "Django", level: "Intermediate", years: "1+" },
@@ -39,17 +39,17 @@ const skillCategories = [
       { name: "Deep Learning", level: "Intermediate", years: "1+" },
       { name: "Model Training and Optimization", level: "Intermediate", years: "1+" },
       { name: "Supervised/Unsupervised Learning", level: "Intermediate", years: "2+" },
-      { name: "RAG Pipelines", level: "Advanced", years: "1+" },
-      { name: "OpenAI API", level: "Advanced", years: "1+" },
+      { name: "RAG Pipelines", level: "Proficient", years: "1+" },
+      { name: "OpenAI API", level: "Proficient", years: "1+" },
     ],
   },
   {
     category: "Web & Mobile Development",
     icon: "🌐",
     skills: [
-      { name: "Full-Stack Development", level: "Advanced", years: "2+" },
-      { name: "RESTful APIs", level: "Advanced", years: "2+" },
-      { name: "Front-End/Back-End Integration", level: "Advanced", years: "2+" },
+      { name: "Full-Stack Development", level: "Proficient", years: "2+" },
+      { name: "RESTful APIs", level: "Proficient", years: "2+" },
+      { name: "Front-End/Back-End Integration", level: "Proficient", years: "2+" },
       { name: "Firebase", level: "Intermediate", years: "1+" },
       { name: "Bootstrap", level: "Intermediate", years: "2+" },
       { name: "Android Development", level: "Intermediate", years: "1+" },
@@ -61,39 +61,39 @@ const skillCategories = [
     category: "Quality Systems & Documentation",
     icon: "📋",
     skills: [
-      { name: "PLM & QMS Documentation Management", level: "Advanced", years: "4+" },
-      { name: "Document Change Orders (DCOs)", level: "Advanced", years: "4+" },
-      { name: "SOP Authoring and Control", level: "Advanced", years: "4+" },
-      { name: "Training Record Management", level: "Advanced", years: "4+" },
-      { name: "Change Control Workflows", level: "Advanced", years: "4+" },
-      { name: "Audit Support (FDA, ISO 13485)", level: "Advanced", years: "4+" },
-      { name: "Controlled Document Archiving", level: "Advanced", years: "4+" },
-      { name: "Electronic Document Routing", level: "Advanced", years: "3+" },
-      { name: "Version Control", level: "Advanced", years: "3+" },
+      { name: "PLM & QMS Documentation Management", level: "Proficient", years: "4+" },
+      { name: "Document Change Orders (DCOs)", level: "Proficient", years: "4+" },
+      { name: "SOP Authoring and Control", level: "Proficient", years: "4+" },
+      { name: "Training Record Management", level: "Proficient", years: "4+" },
+      { name: "Change Control Workflows", level: "Proficient", years: "4+" },
+      { name: "Audit Support (FDA, ISO 13485)", level: "Proficient", years: "4+" },
+      { name: "Controlled Document Archiving", level: "Proficient", years: "4+" },
+      { name: "Electronic Document Routing", level: "Proficient", years: "3+" },
+      { name: "Version Control", level: "Proficient", years: "3+" },
     ],
   },
   {
     category: "Manufacturing & Quality Systems",
     icon: "🏭",
     skills: [
-      { name: "Production Documentation Updates", level: "Advanced", years: "4+" },
-      { name: "Process Change Implementation", level: "Advanced", years: "4+" },
-      { name: "Cross-Functional Quality Support", level: "Advanced", years: "4+" },
-      { name: "ISO-13485", level: "Advanced", years: "4+" },
-      { name: "cGMP Documentation Practices", level: "Advanced", years: "4+" },
-      { name: "Internal and External Audit Support", level: "Advanced", years: "4+" },
-      { name: "Training Compliance", level: "Advanced", years: "4+" },
-      { name: "Quality System Maintenance", level: "Advanced", years: "4+" },
+      { name: "Production Documentation Updates", level: "Proficient", years: "4+" },
+      { name: "Process Change Implementation", level: "Proficient", years: "4+" },
+      { name: "Cross-Functional Quality Support", level: "Proficient", years: "4+" },
+      { name: "ISO-13485", level: "Proficient", years: "4+" },
+      { name: "cGMP Documentation Practices", level: "Proficient", years: "4+" },
+      { name: "Internal and External Audit Support", level: "Proficient", years: "4+" },
+      { name: "Training Compliance", level: "Proficient", years: "4+" },
+      { name: "Quality System Maintenance", level: "Proficient", years: "4+" },
     ],
   },
   {
     category: "Database Technologies",
     icon: "🗄️",
     skills: [
-      { name: "SQL", level: "Advanced", years: "2+" },
+      { name: "SQL", level: "Proficient", years: "2+" },
       { name: "MongoDB", level: "Intermediate", years: "2+" },
       { name: "PostgreSQL", level: "Intermediate", years: "1+" },
-      { name: "Relational & Non-Relational Databases", level: "Advanced", years: "2+" },
+      { name: "Relational & Non-Relational Databases", level: "Proficient", years: "2+" },
       { name: "Data Modeling", level: "Intermediate", years: "2+" },
       { name: "Redis (Vector Search)", level: "Intermediate", years: "1+" },
       { name: "Pinecone", level: "Intermediate", years: "1+" },
@@ -103,12 +103,12 @@ const skillCategories = [
     category: "DevOps & Tools",
     icon: "⚙️",
     skills: [
-      { name: "Git", level: "Advanced", years: "3+" },
-      { name: "GitHub", level: "Advanced", years: "3+" },
+      { name: "Git", level: "Proficient", years: "3+" },
+      { name: "GitHub", level: "Proficient", years: "3+" },
       { name: "Docker", level: "Intermediate", years: "1+" },
       { name: "Postman", level: "Intermediate", years: "2+" },
       { name: "CI/CD (GitHub Actions)", level: "Intermediate", years: "1+" },
-      { name: "Agile/Scrum", level: "Advanced", years: "2+" },
+      { name: "Agile/Scrum", level: "Proficient", years: "2+" },
       { name: "TDD (Jest, JUnit)", level: "Intermediate", years: "2+" },
       { name: "Google Cloud Run", level: "Intermediate", years: "1+" },
     ],
@@ -117,27 +117,27 @@ const skillCategories = [
     category: "Secure Coding & Cybersecurity",
     icon: "🔒",
     skills: [
-      { name: "Input Validation", level: "Advanced", years: "2+" },
+      { name: "Input Validation", level: "Proficient", years: "2+" },
       { name: "Buffer Overflow Mitigation", level: "Intermediate", years: "1+" },
-      { name: "SQL Injection Defense", level: "Advanced", years: "2+" },
+      { name: "SQL Injection Defense", level: "Proficient", years: "2+" },
       { name: "Reverse Engineering (C++ ↔ Assembly ↔ Binary Translation)", level: "Intermediate", years: "1+" },
       { name: "Disassembly Analysis", level: "Intermediate", years: "1+" },
-      { name: "Legacy Code Documentation", level: "Advanced", years: "2+" },
+      { name: "Legacy Code Documentation", level: "Proficient", years: "2+" },
       { name: "Vulnerability Identification", level: "Intermediate", years: "2+" },
       { name: "Static/Dynamic Code Analysis", level: "Intermediate", years: "2+" },
       { name: "Unit Testing for Security", level: "Intermediate", years: "2+" },
       { name: "Encryption Techniques", level: "Intermediate", years: "1+" },
-      { name: "Secure SDLC Programming", level: "Advanced", years: "2+" },
+      { name: "Secure SDLC Programming", level: "Proficient", years: "2+" },
     ],
   },
   {
     category: "Systems Architecture & Embedded Technologies",
     icon: "⚡",
     skills: [
-      { name: "Raspberry Pi (GPIO, UART, PWM)", level: "Advanced", years: "1+" },
-      { name: "Peripheral Device Integration (Sensors, Displays)", level: "Advanced", years: "1+" },
+      { name: "Raspberry Pi (GPIO, UART, PWM)", level: "Proficient", years: "1+" },
+      { name: "Peripheral Device Integration (Sensors, Displays)", level: "Proficient", years: "1+" },
       { name: "Embedded vs. Desktop Systems", level: "Intermediate", years: "1+" },
-      { name: "Thermostat and IoT Device Programming", level: "Advanced", years: "1+" },
+      { name: "Thermostat and IoT Device Programming", level: "Proficient", years: "1+" },
       { name: "Hardware-Software Interfaces", level: "Intermediate", years: "1+" },
       { name: "Binary File Analysis", level: "Intermediate", years: "1+" },
       { name: "Low-Level System Optimization", level: "Intermediate", years: "1+" },
@@ -152,7 +152,7 @@ const skillCategories = [
       { name: "Wireframing", level: "Intermediate", years: "2+" },
       { name: "Prototyping", level: "Intermediate", years: "2+" },
       { name: "User Journey Mapping", level: "Intermediate", years: "1+" },
-      { name: "Responsive Design", level: "Advanced", years: "2+" },
+      { name: "Responsive Design", level: "Proficient", years: "2+" },
       { name: "Figma", level: "Intermediate", years: "1+" },
     ],
   },
@@ -160,11 +160,11 @@ const skillCategories = [
     category: "Testing & QA",
     icon: "✅",
     skills: [
-      { name: "Unit/Integration Testing", level: "Advanced", years: "2+" },
-      { name: "Test Planning", level: "Advanced", years: "4+" },
+      { name: "Unit/Integration Testing", level: "Proficient", years: "2+" },
+      { name: "Test Planning", level: "Proficient", years: "4+" },
       { name: "Static/Dynamic Testing", level: "Intermediate", years: "2+" },
-      { name: "Secure Development Lifecycle (SDLC)", level: "Advanced", years: "2+" },
-      { name: "QA Documentation", level: "Advanced", years: "4+" },
+      { name: "Secure Development Lifecycle (SDLC)", level: "Proficient", years: "2+" },
+      { name: "QA Documentation", level: "Proficient", years: "4+" },
     ],
   },
 ];
@@ -176,9 +176,8 @@ export default function SkillsPage() {
         <div className="max-w-4xl mb-12">
           <h1 className="heading-1 mb-6">Skills & Expertise</h1>
           <p className="body-large mb-6">
-            Comprehensive technical capabilities spanning full-stack development, AI/ML integration, quality systems,
-            cybersecurity, and embedded systems. Organized by domain expertise developed through academic projects,
-            professional experience, and continuous learning.
+            Technical skills developed through academic coursework, personal projects, and recent internships.
+            I'm continuously expanding my capabilities and eager to apply what I've learned in a professional setting.
           </p>
 
           {/* Proficiency Legend */}
@@ -189,21 +188,21 @@ export default function SkillsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="flex items-center gap-3">
                 <div className="px-3 py-1 text-xs font-medium bg-green-100 text-green-700 border border-green-300 rounded">
-                  Advanced
+                  Proficient
                 </div>
-                <span className="text-sm text-gray-700">Production-ready with deep understanding</span>
+                <span className="text-sm text-gray-700">Comfortable building projects independently</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="px-3 py-1 text-xs font-medium bg-blue-100 text-blue-700 border border-blue-300 rounded">
                   Intermediate
                 </div>
-                <span className="text-sm text-gray-700">Comfortable with practical application</span>
+                <span className="text-sm text-gray-700">Working knowledge through coursework/projects</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="px-3 py-1 text-xs font-medium bg-gray-100 text-gray-700 border border-gray-300 rounded">
                   Foundational
                 </div>
-                <span className="text-sm text-gray-700">Academic knowledge, building experience</span>
+                <span className="text-sm text-gray-700">Learning through coursework and practice</span>
               </div>
             </div>
           </div>
@@ -219,7 +218,7 @@ export default function SkillsPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {category.skills.map((skill) => {
                   const levelColors = {
-                    "Advanced": "bg-green-100 text-green-700 border-green-300",
+                    "Proficient": "bg-green-100 text-green-700 border-green-300",
                     "Intermediate": "bg-blue-100 text-blue-700 border-blue-300",
                     "Foundational": "bg-gray-100 text-gray-700 border-gray-300",
                   };
@@ -250,40 +249,40 @@ export default function SkillsPage() {
           ))}
         </div>
 
-        {/* Highlighted Expertise */}
+        {/* Key Areas of Focus */}
         <div className="mt-20 pt-16 border-t border-gray-200 max-w-4xl">
-          <h2 className="heading-2 mb-8">Core Competencies</h2>
+          <h2 className="heading-2 mb-8">Areas of Focus</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-primary-50 to-blue-50 p-6 rounded-lg border border-primary-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Full-Stack Development</h3>
               <p className="body text-gray-700">
-                Building complete web applications through academic and personal projects using React, Next.js,
-                Node.js, and Django. Comfortable with RESTful APIs, database design, and connecting front-end interfaces
-                to backend services.
+                Building web applications through academic projects and internships using React, Next.js,
+                Node.js, and Django. Learning RESTful API design, database modeling, and connecting frontend
+                interfaces to backend services.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-lg border border-green-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">AI & Machine Learning Integration</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">AI & Machine Learning</h3>
               <p className="body text-gray-700">
-                Implementing AI-powered features using TensorFlow, Keras, and OpenAI APIs in personal projects.
-                Familiar with neural networks, RAG pipelines, vector databases, and integrating ML models into full-stack applications.
+                Exploring AI-powered applications through internship work with RAG pipelines, OpenAI APIs, and vector databases.
+                Academic experience with TensorFlow, Keras, and neural networks. Eager to deepen my understanding of ML systems.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-purple-50 to-violet-50 p-6 rounded-lg border border-purple-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Secure Software Development Practices</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Secure Coding Practices</h3>
               <p className="body text-gray-700">
-                Trained in writing secure code with emphasis on input validation, SQL injection defense, and buffer overflow mitigation.
-                Academic coursework in reverse engineering, static/dynamic code analysis, vulnerability identification, and secure SDLC.
+                Completed coursework in secure software development covering input validation, SQL injection defense,
+                and buffer overflow mitigation. Learning about vulnerability identification, code analysis, and secure development lifecycle.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-lg border border-orange-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Systems & Technical Documentation</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Systems & Documentation</h3>
               <p className="body text-gray-700">
-                Professional experience managing PLM/QMS documentation at Walmart and Reality AI, including change control workflows,
-                SOP authoring, training records, and supporting FDA and ISO 13485 audit preparation in regulated environments.
+                Professional experience with documentation management in regulated environments (ISO 13485, cGMP).
+                Developed strong skills in process documentation, change control, and maintaining compliance standards.
               </p>
             </div>
           </div>
@@ -394,17 +393,17 @@ export default function SkillsPage() {
           </div>
         </div>
 
-        {/* Approach */}
+        {/* Learning Mindset */}
         <div className="mt-16 max-w-4xl">
           <div className="bg-gray-50 border-l-4 border-primary-500 p-8 rounded-r">
-            <h2 className="heading-3 mb-4">My Approach to Technology</h2>
+            <h2 className="heading-3 mb-4">My Approach to Learning</h2>
             <p className="body mb-4">
-              I believe in choosing the right tool for the job rather than chasing trends. Technology choices should be
-              driven by project requirements, team capabilities, and long-term maintainability.
+              I focus on understanding fundamentals rather than just learning frameworks. I believe strong foundations in
+              data structures, algorithms, and software design principles make it easier to adapt to new technologies and solve problems effectively.
             </p>
             <p className="body">
-              I prioritize clean, well-tested solutions that solve real problems. The best code is readable, maintainable,
-              and secure—built with both the end user and future developers in mind.
+              I learn best by building things, breaking them, and understanding why. I value code that's readable and maintainable,
+              and I'm always looking for feedback to improve my skills and grow as an engineer.
             </p>
           </div>
         </div>

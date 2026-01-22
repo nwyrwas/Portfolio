@@ -20,18 +20,17 @@ export default function AboutPage() {
               {/* Elevator Pitch */}
               <div className="bg-gradient-to-r from-primary-50 to-blue-50 border-l-4 border-primary-600 p-6 rounded-r mb-8">
                 <p className="body-large font-medium text-gray-900 mb-3">
-                  Marine Corps veteran and Computer Science graduate specializing in full-stack development, AI engineering, and secure software systems.
+                  Recent Computer Science graduate and Marine Corps veteran building full-stack applications and exploring AI engineering.
                 </p>
                 <p className="body text-gray-700">
-                  I bring a disciplined, mission-driven approach to building reliable, scalable software—shaped by military service and hands-on industry experience.
+                  I bring a disciplined, mission-driven approach to learning and problem-solving—shaped by military service and hands-on academic projects.
                 </p>
               </div>
 
               <p className="body-large mb-6 text-gray-700">
-                My technical background spans full-stack web development, RESTful API design, and AI-powered applications.
-                Through internships in generative AI and software engineering, I have worked with technologies such as Python, JavaScript, React, Django, Node.js, and
-                modern AI frameworks to deliver production-ready solutions. I am particularly interested in building systems that balance performance, maintainability,
-                and real-world usability.
+                Through my degree program and recent internships, I've gained hands-on experience with full-stack web development, RESTful API design, and AI-powered applications.
+                I've worked with technologies like Python, JavaScript, React, Django, Node.js, and modern AI frameworks through academic projects and internships.
+                I'm eager to continue learning and applying these skills in a professional environment.
               </p>
 
               <p className="body mb-6">
@@ -47,15 +46,15 @@ export default function AboutPage() {
                   <svg className="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                   </svg>
-                  Career Goals
+                  What I'm Looking For
                 </h3>
                 <p className="body text-gray-700 mb-4">
-                  I am actively seeking an entry-level or junior software engineering role where I can grow under experienced mentorship,
-                  contribute to production codebases, and continue building strong fundamentals in backend and full-stack development.
+                  I'm seeking an entry-level software engineering role where I can learn from experienced engineers, contribute to real-world projects,
+                  and continue developing my skills in full-stack development.
                 </p>
                 <p className="body text-gray-600">
-                  I'm motivated by environments that emphasize clean design, reliability, and continuous improvement—where I can apply my technical skills
-                  while learning from seasoned engineers and contributing to meaningful projects.
+                  I'm drawn to teams that value clean code, collaborative learning, and continuous improvement. I'm ready to work hard,
+                  ask questions, and grow as an engineer while making meaningful contributions to projects I believe in.
                 </p>
               </div>
             </div>
@@ -73,7 +72,7 @@ export default function AboutPage() {
                     Nicholas Wyrwas
                   </p>
                   <p className="text-sm text-gray-600 mb-4">
-                    Full-Stack Software Engineer
+                    Software Engineer
                   </p>
                 </div>
 
