@@ -64,7 +64,7 @@ export default function Home() {
               "React", "Next.js", "Node.js", "FastAPI", "Angular",
               "PostgreSQL", "MongoDB", "SQLite", "Prisma",
               "OpenAI", "TensorFlow", "Pinecone",
-              "Docker", "Git", "AWS"
+              "Docker", "Git"
             ].map((tech) => (
               <span
                 key={tech}
@@ -233,7 +233,7 @@ export default function Home() {
                 Tooling, Cloud & Development Practices
               </h3>
               <p className="text-sm text-gray-600 mb-3">
-                Learning modern development workflows including version control, containerization, CI/CD pipelines, and cloud deployment basics.
+                Learning modern development workflows including version control, containerization, CI/CD pipelines, and cloud platforms like AWS.
               </p>
               <div className="flex flex-wrap gap-2">
                 {[
@@ -241,7 +241,7 @@ export default function Home() {
                   "Docker",
                   "CI/CD Fundamentals",
                   "GitHub Actions",
-                  "Cloud Deployment Basics"
+                  "Learning AWS"
                 ].map((skill) => (
                   <span
                     key={skill}
