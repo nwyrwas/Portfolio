@@ -602,8 +602,7 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/nwyrwas/CS-330-Comp-Graphic-and-Visualization"
-    },
-    images: ["/3d-graphics-opengl.png"]
+    }
   },
   {
     id: "travlr-travel-platform",
@@ -725,8 +724,7 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/nwyrwas/Full-Stack-Development"
-    },
-    images: ["/travlr-travel-platform.png"]
+    }
   },
   {
     id: "thermostat-embedded-systems",
@@ -841,8 +839,7 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/nwyrwas/CS-350-13290-M01-Emerging-Sys-Arch-Tech"
-    },
-    images: ["/thermostat-embedded-systems.png"]
+    }
   },
   {
     id: "mobile-inventory-app",
@@ -956,8 +953,7 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/nwyrwas/Mobile-Architect-and-Programming"
-    },
-    images: ["/mobile-inventory-app.png"]
+    }
   },
   {
     id: "secure-coding-policy",
@@ -1083,8 +1079,7 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/nwyrwas/CS-405-15275-Secure-Coding"
-    },
-    images: ["/secure-coding-policy.png"]
+    }
   }
 ];
 
