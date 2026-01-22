@@ -12,18 +12,22 @@ export default function AboutPage() {
     <>
       <Section className="pt-20">
         <div className="max-w-6xl">
-          <h1 className="heading-1 mb-8">About Me</h1>
+          <h1 className="heading-1 mb-12">About Me</h1>
 
           <div className="grid md:grid-cols-3 gap-12 items-start">
             {/* Text Content - Left Side (2/3 width) */}
             <div className="md:col-span-2 prose prose-lg max-w-none">
-              <p className="body-large mb-6 text-gray-700">
-                I am a Marine Corps veteran and recent Computer Science graduate specializing in full-stack software development and applied AI engineering.
-                I bring a disciplined, mission-driven approach to building reliable, secure, and scalable software systems—shaped by both military service and hands-on
-                industry experience.
-              </p>
+              {/* Elevator Pitch */}
+              <div className="bg-gradient-to-r from-primary-50 to-blue-50 border-l-4 border-primary-600 p-6 rounded-r mb-8">
+                <p className="body-large font-medium text-gray-900 mb-3">
+                  Marine Corps veteran and Computer Science graduate specializing in full-stack development, AI engineering, and secure software systems.
+                </p>
+                <p className="body text-gray-700">
+                  I bring a disciplined, mission-driven approach to building reliable, scalable software—shaped by military service and hands-on industry experience.
+                </p>
+              </div>
 
-              <p className="body mb-6">
+              <p className="body-large mb-6 text-gray-700">
                 My technical background spans full-stack web development, RESTful API design, and AI-powered applications.
                 Through internships in generative AI and software engineering, I have worked with technologies such as Python, JavaScript, React, Django, Node.js, and
                 modern AI frameworks to deliver production-ready solutions. I am particularly interested in building systems that balance performance, maintainability,
@@ -37,24 +41,117 @@ export default function AboutPage() {
                 and well-documented software.
               </p>
 
-              <p className="body mb-8">
-                I am actively seeking an entry-level or junior software engineering role where I can grow under experienced mentorship,
-                contribute to production codebases, and continue building strong fundamentals in backend and full-stack development.
-                I’m motivated by environments that emphasize clean design, reliability, and continuous improvement.
-              </p>
+              {/* Career Goals Section */}
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8">
+                <h3 className="heading-4 mb-4 flex items-center gap-2">
+                  <svg className="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                  Career Goals
+                </h3>
+                <p className="body text-gray-700 mb-4">
+                  I am actively seeking an entry-level or junior software engineering role where I can grow under experienced mentorship,
+                  contribute to production codebases, and continue building strong fundamentals in backend and full-stack development.
+                </p>
+                <p className="body text-gray-600">
+                  I'm motivated by environments that emphasize clean design, reliability, and continuous improvement—where I can apply my technical skills
+                  while learning from seasoned engineers and contributing to meaningful projects.
+                </p>
+              </div>
             </div>
 
-            {/* Photo - Right Side (1/3 width) */}
+            {/* Photo & Contact - Right Side (1/3 width) */}
             <div className="md:col-span-1">
-              <div className="sticky top-24">
+              <div className="sticky top-24 space-y-6">
                 <img
                   src="/headshot.jpg"
                   alt="Nick Wyrwas"
                   className="w-full rounded-lg shadow-lg"
                 />
-                <p className="text-sm text-gray-600 text-center mt-4">
-                  Nick Wyrwas
-                </p>
+                <div className="text-center">
+                  <p className="text-lg font-semibold text-gray-900 mb-1">
+                    Nicholas Wyrwas
+                  </p>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Full-Stack Software Engineer
+                  </p>
+                </div>
+
+                {/* Contact Information */}
+                <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm">
+                  <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide mb-4">
+                    Contact
+                  </h3>
+                  <div className="space-y-3">
+                    <a
+                      href="mailto:nick.wyrwas@gmail.com"
+                      className="flex items-center gap-3 text-sm text-gray-700 hover:text-primary-600 transition-colors group"
+                    >
+                      <svg className="w-5 h-5 text-gray-400 group-hover:text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      <span className="break-all">nick.wyrwas@gmail.com</span>
+                    </a>
+                    <a
+                      href="https://linkedin.com/in/nicholas-wyrwas"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-sm text-gray-700 hover:text-primary-600 transition-colors group"
+                    >
+                      <svg className="w-5 h-5 text-gray-400 group-hover:text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                      </svg>
+                      <span>LinkedIn</span>
+                    </a>
+                    <a
+                      href="https://github.com/nwyrwas"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-sm text-gray-700 hover:text-primary-600 transition-colors group"
+                    >
+                      <svg className="w-5 h-5 text-gray-400 group-hover:text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                      </svg>
+                      <span>GitHub</span>
+                    </a>
+                    <a
+                      href="/resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-sm text-gray-700 hover:text-primary-600 transition-colors group"
+                    >
+                      <svg className="w-5 h-5 text-gray-400 group-hover:text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                      <span>View Resume</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Quick Stats */}
+                <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+                  <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide mb-4">
+                    Quick Facts
+                  </h3>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <span className="text-gray-600">Location:</span>
+                      <span className="ml-2 font-medium text-gray-900">Illinois, USA</span>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">Education:</span>
+                      <span className="ml-2 font-medium text-gray-900">B.S. Computer Science</span>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">Experience:</span>
+                      <span className="ml-2 font-medium text-gray-900">2+ Years</span>
+                    </div>
+                    <div>
+                      <span className="text-gray-600">Status:</span>
+                      <span className="ml-2 font-medium text-primary-600">Open to Opportunities</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

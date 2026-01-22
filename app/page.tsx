@@ -12,41 +12,67 @@ export default function Home() {
       {/* Hero Section */}
       <Section className="pt-20 md:pt-32">
         <div className="max-w-4xl">
+          <div className="inline-block mb-4 px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-semibold">
+            Computer Science Graduate • USMC Veteran
+          </div>
           <h1 className="heading-1 mb-6">
-            I build reliable software with a focus on clarity and scale
+            Full-Stack Software Engineer Building Intelligent, Scalable Solutions
           </h1>
           <p className="body-large mb-8 max-w-2xl">
-            Software engineering graduate and U.S. Marine Corps veteran focused on building well-structured applications,
-            designing clean APIs, and solving complex problems with practical, maintainable solutions. </p>
+            I design and develop robust applications across the full stack—from AI-powered systems and secure backend APIs to responsive frontends and embedded IoT devices. With expertise spanning machine learning, mobile development, and cybersecurity, I bring a disciplined, mission-focused approach to solving complex technical challenges.
+          </p>
           <div className="flex flex-wrap gap-4">
             <Button href="/projects" size="lg">
               View My Work
             </Button>
-            <Button href="/resume.pdf" variant="secondary" size="lg">
-              Download Resume
+            <Button href="/contact" variant="secondary" size="lg">
+              Get in Touch
             </Button>
           </div>
         </div>
 
         {/* Credibility Markers */}
         <div className="mt-16 pt-8 border-t border-gray-200">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">B.S</div>
-              <div className="text-sm text-gray-600">Software Engineering</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">9</div>
+              <div className="text-sm text-gray-600">Portfolio Projects</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">United States Marine Corps</div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">15+</div>
+              <div className="text-sm text-gray-600">Technologies</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">B.S.</div>
+              <div className="text-sm text-gray-600">Computer Science</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-gray-900 mb-1">USMC</div>
               <div className="text-sm text-gray-600">Veteran</div>
             </div>
-            <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">10+</div>
-              <div className="text-sm text-gray-600">Academic and Personal Projects</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">%100</div>
-              <div className="text-sm text-gray-600">Commitment to Growth and Development</div>
-            </div>
+          </div>
+        </div>
+
+        {/* Tech Stack Showcase */}
+        <div className="mt-16">
+          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide text-center mb-6">
+            Technologies I Work With
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              "Python", "TypeScript", "JavaScript", "Java", "C++",
+              "React", "Next.js", "Node.js", "FastAPI", "Angular",
+              "PostgreSQL", "MongoDB", "SQLite", "Prisma",
+              "OpenAI", "TensorFlow", "Pinecone",
+              "Docker", "Git", "AWS"
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="px-4 py-2 text-sm font-medium bg-white border border-gray-200 text-gray-700 rounded-lg hover:border-primary-300 hover:bg-primary-50 transition-colors"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
         </div>
       </Section>

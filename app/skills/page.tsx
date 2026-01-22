@@ -9,151 +9,162 @@ export const metadata: Metadata = {
 const skillCategories = [
   {
     category: "Programming & Frameworks",
+    icon: "💻",
     skills: [
-      "Python",
-      "JavaScript",
-      "TypeScript",
-      "Java",
-      "C",
-      "C++",
-      "HTML",
-      "CSS",
-      "React",
-      "Node.js",
-      "Express",
-      "Angular",
-      "Django",
-      "Django REST Framework",
-      "OpenGL",
-      "X86/x64",
+      { name: "Python", level: "Advanced", years: "3+" },
+      { name: "JavaScript", level: "Advanced", years: "3+" },
+      { name: "TypeScript", level: "Intermediate", years: "2+" },
+      { name: "Java", level: "Intermediate", years: "2+" },
+      { name: "C", level: "Intermediate", years: "2+" },
+      { name: "C++", level: "Intermediate", years: "2+" },
+      { name: "HTML", level: "Advanced", years: "3+" },
+      { name: "CSS", level: "Advanced", years: "3+" },
+      { name: "React", level: "Advanced", years: "2+" },
+      { name: "Node.js", level: "Advanced", years: "2+" },
+      { name: "Express", level: "Intermediate", years: "2+" },
+      { name: "Angular", level: "Intermediate", years: "1+" },
+      { name: "Django", level: "Intermediate", years: "1+" },
+      { name: "Django REST Framework", level: "Intermediate", years: "1+" },
+      { name: "OpenGL", level: "Foundational", years: "1" },
+      { name: "X86/x64", level: "Foundational", years: "1" },
     ],
   },
   {
     category: "AI & Machine Learning",
+    icon: "🤖",
     skills: [
-      "TensorFlow",
-      "Keras",
-      "Neural Networks",
-      "Deep Learning",
-      "Model Training and Optimization",
-      "Supervised/Unsupervised Learning",
-      "RAG Pipelines",
-      "OpenAI API",
+      { name: "TensorFlow", level: "Intermediate", years: "2+" },
+      { name: "Keras", level: "Intermediate", years: "2+" },
+      { name: "Neural Networks", level: "Intermediate", years: "2+" },
+      { name: "Deep Learning", level: "Intermediate", years: "1+" },
+      { name: "Model Training and Optimization", level: "Intermediate", years: "1+" },
+      { name: "Supervised/Unsupervised Learning", level: "Intermediate", years: "2+" },
+      { name: "RAG Pipelines", level: "Advanced", years: "1+" },
+      { name: "OpenAI API", level: "Advanced", years: "1+" },
     ],
   },
   {
     category: "Web & Mobile Development",
+    icon: "🌐",
     skills: [
-      "Full-Stack Development",
-      "RESTful APIs",
-      "Front-End/Back-End Integration",
-      "Firebase",
-      "Bootstrap",
-      "Android Development",
-      "Mobile UI/UX",
-      "Kotlin",
+      { name: "Full-Stack Development", level: "Advanced", years: "2+" },
+      { name: "RESTful APIs", level: "Advanced", years: "2+" },
+      { name: "Front-End/Back-End Integration", level: "Advanced", years: "2+" },
+      { name: "Firebase", level: "Intermediate", years: "1+" },
+      { name: "Bootstrap", level: "Intermediate", years: "2+" },
+      { name: "Android Development", level: "Intermediate", years: "1+" },
+      { name: "Mobile UI/UX", level: "Intermediate", years: "1+" },
+      { name: "Kotlin", level: "Foundational", years: "1" },
     ],
   },
   {
     category: "Quality Systems & Documentation",
+    icon: "📋",
     skills: [
-      "PLM & QMS Documentation Management",
-      "Document Change Orders (DCOs)",
-      "SOP Authoring and Control",
-      "Training Record Management",
-      "Change Control Workflows",
-      "Audit Support (FDA, ISO 13485)",
-      "Controlled Document Archiving",
-      "Electronic Document Routing",
-      "Version Control",
+      { name: "PLM & QMS Documentation Management", level: "Advanced", years: "4+" },
+      { name: "Document Change Orders (DCOs)", level: "Advanced", years: "4+" },
+      { name: "SOP Authoring and Control", level: "Advanced", years: "4+" },
+      { name: "Training Record Management", level: "Advanced", years: "4+" },
+      { name: "Change Control Workflows", level: "Advanced", years: "4+" },
+      { name: "Audit Support (FDA, ISO 13485)", level: "Advanced", years: "4+" },
+      { name: "Controlled Document Archiving", level: "Advanced", years: "4+" },
+      { name: "Electronic Document Routing", level: "Advanced", years: "3+" },
+      { name: "Version Control", level: "Advanced", years: "3+" },
     ],
   },
   {
     category: "Manufacturing & Quality Systems",
+    icon: "🏭",
     skills: [
-      "Production Documentation Updates",
-      "Process Change Implementation",
-      "Cross-Functional Quality Support",
-      "ISO-13485",
-      "cGMP Documentation Practices",
-      "Internal and External Audit Support",
-      "Training Compliance",
-      "Quality System Maintenance",
+      { name: "Production Documentation Updates", level: "Advanced", years: "4+" },
+      { name: "Process Change Implementation", level: "Advanced", years: "4+" },
+      { name: "Cross-Functional Quality Support", level: "Advanced", years: "4+" },
+      { name: "ISO-13485", level: "Advanced", years: "4+" },
+      { name: "cGMP Documentation Practices", level: "Advanced", years: "4+" },
+      { name: "Internal and External Audit Support", level: "Advanced", years: "4+" },
+      { name: "Training Compliance", level: "Advanced", years: "4+" },
+      { name: "Quality System Maintenance", level: "Advanced", years: "4+" },
     ],
   },
   {
     category: "Database Technologies",
+    icon: "🗄️",
     skills: [
-      "SQL",
-      "MongoDB",
-      "PostgreSQL",
-      "Relational & Non-Relational Databases",
-      "Data Modeling",
-      "Redis (Vector Search)",
-      "Pinecone",
+      { name: "SQL", level: "Advanced", years: "2+" },
+      { name: "MongoDB", level: "Intermediate", years: "2+" },
+      { name: "PostgreSQL", level: "Intermediate", years: "1+" },
+      { name: "Relational & Non-Relational Databases", level: "Advanced", years: "2+" },
+      { name: "Data Modeling", level: "Intermediate", years: "2+" },
+      { name: "Redis (Vector Search)", level: "Intermediate", years: "1+" },
+      { name: "Pinecone", level: "Intermediate", years: "1+" },
     ],
   },
   {
     category: "DevOps & Tools",
+    icon: "⚙️",
     skills: [
-      "Git",
-      "GitHub",
-      "Docker",
-      "Postman",
-      "CI/CD (GitHub Actions)",
-      "Agile/Scrum",
-      "TDD (Jest, JUnit)",
-      "Google Cloud Run",
+      { name: "Git", level: "Advanced", years: "3+" },
+      { name: "GitHub", level: "Advanced", years: "3+" },
+      { name: "Docker", level: "Intermediate", years: "1+" },
+      { name: "Postman", level: "Intermediate", years: "2+" },
+      { name: "CI/CD (GitHub Actions)", level: "Intermediate", years: "1+" },
+      { name: "Agile/Scrum", level: "Advanced", years: "2+" },
+      { name: "TDD (Jest, JUnit)", level: "Intermediate", years: "2+" },
+      { name: "Google Cloud Run", level: "Intermediate", years: "1+" },
     ],
   },
   {
     category: "Secure Coding & Cybersecurity",
+    icon: "🔒",
     skills: [
-      "Input Validation",
-      "Buffer Overflow Mitigation",
-      "SQL Injection Defense",
-      "Reverse Engineering (C++ ↔ Assembly ↔ Binary Translation)",
-      "Disassembly Analysis",
-      "Legacy Code Documentation",
-      "Vulnerability Identification",
-      "Static/Dynamic Code Analysis",
-      "Unit Testing for Security",
-      "Encryption Techniques",
-      "Secure SDLC Programming",
+      { name: "Input Validation", level: "Advanced", years: "2+" },
+      { name: "Buffer Overflow Mitigation", level: "Intermediate", years: "1+" },
+      { name: "SQL Injection Defense", level: "Advanced", years: "2+" },
+      { name: "Reverse Engineering (C++ ↔ Assembly ↔ Binary Translation)", level: "Intermediate", years: "1+" },
+      { name: "Disassembly Analysis", level: "Intermediate", years: "1+" },
+      { name: "Legacy Code Documentation", level: "Advanced", years: "2+" },
+      { name: "Vulnerability Identification", level: "Intermediate", years: "2+" },
+      { name: "Static/Dynamic Code Analysis", level: "Intermediate", years: "2+" },
+      { name: "Unit Testing for Security", level: "Intermediate", years: "2+" },
+      { name: "Encryption Techniques", level: "Intermediate", years: "1+" },
+      { name: "Secure SDLC Programming", level: "Advanced", years: "2+" },
     ],
   },
   {
     category: "Systems Architecture & Embedded Technologies",
+    icon: "⚡",
     skills: [
-      "Raspberry Pi (GPIO, UART, PWM)",
-      "Peripheral Device Integration (Sensors, Displays)",
-      "Embedded vs. Desktop Systems",
-      "Thermostat and IoT Device Programming",
-      "Hardware-Software Interfaces",
-      "Binary File Analysis",
-      "Low-Level System Optimization",
-      "Performance Optimization",
-      "System Architecture Evaluation",
+      { name: "Raspberry Pi (GPIO, UART, PWM)", level: "Advanced", years: "1+" },
+      { name: "Peripheral Device Integration (Sensors, Displays)", level: "Advanced", years: "1+" },
+      { name: "Embedded vs. Desktop Systems", level: "Intermediate", years: "1+" },
+      { name: "Thermostat and IoT Device Programming", level: "Advanced", years: "1+" },
+      { name: "Hardware-Software Interfaces", level: "Intermediate", years: "1+" },
+      { name: "Binary File Analysis", level: "Intermediate", years: "1+" },
+      { name: "Low-Level System Optimization", level: "Intermediate", years: "1+" },
+      { name: "Performance Optimization", level: "Intermediate", years: "2+" },
+      { name: "System Architecture Evaluation", level: "Intermediate", years: "2+" },
     ],
   },
   {
     category: "UI/UX & Design",
+    icon: "🎨",
     skills: [
-      "Wireframing",
-      "Prototyping",
-      "User Journey Mapping",
-      "Responsive Design",
-      "Figma",
+      { name: "Wireframing", level: "Intermediate", years: "2+" },
+      { name: "Prototyping", level: "Intermediate", years: "2+" },
+      { name: "User Journey Mapping", level: "Intermediate", years: "1+" },
+      { name: "Responsive Design", level: "Advanced", years: "2+" },
+      { name: "Figma", level: "Intermediate", years: "1+" },
     ],
   },
   {
     category: "Testing & QA",
+    icon: "✅",
     skills: [
-      "Unit/Integration Testing",
-      "Test Planning",
-      "Static/Dynamic Testing",
-      "Secure Development Lifecycle (SDLC)",
-      "QA Documentation",
+      { name: "Unit/Integration Testing", level: "Advanced", years: "2+" },
+      { name: "Test Planning", level: "Advanced", years: "4+" },
+      { name: "Static/Dynamic Testing", level: "Intermediate", years: "2+" },
+      { name: "Secure Development Lifecycle (SDLC)", level: "Advanced", years: "2+" },
+      { name: "QA Documentation", level: "Advanced", years: "4+" },
     ],
   },
 ];
@@ -164,26 +175,76 @@ export default function SkillsPage() {
       <Section className="pt-20">
         <div className="max-w-4xl mb-12">
           <h1 className="heading-1 mb-6">Skills & Expertise</h1>
-          <p className="body-large">
+          <p className="body-large mb-6">
             Comprehensive technical capabilities spanning full-stack development, AI/ML integration, quality systems,
             cybersecurity, and embedded systems. Organized by domain expertise developed through academic projects,
             professional experience, and continuous learning.
           </p>
+
+          {/* Proficiency Legend */}
+          <div className="bg-gradient-to-r from-gray-50 to-blue-50 border border-gray-200 rounded-lg p-5">
+            <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide mb-3">
+              Proficiency Levels
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="flex items-center gap-3">
+                <div className="px-3 py-1 text-xs font-medium bg-green-100 text-green-700 border border-green-300 rounded">
+                  Advanced
+                </div>
+                <span className="text-sm text-gray-700">Production-ready with deep understanding</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="px-3 py-1 text-xs font-medium bg-blue-100 text-blue-700 border border-blue-300 rounded">
+                  Intermediate
+                </div>
+                <span className="text-sm text-gray-700">Comfortable with practical application</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="px-3 py-1 text-xs font-medium bg-gray-100 text-gray-700 border border-gray-300 rounded">
+                  Foundational
+                </div>
+                <span className="text-sm text-gray-700">Academic knowledge, building experience</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="max-w-5xl space-y-10">
+        <div className="max-w-6xl space-y-12">
           {skillCategories.map((category) => (
-            <div key={category.category}>
-              <h2 className="heading-4 mb-4 text-gray-900">{category.category}</h2>
-              <div className="flex flex-wrap gap-3">
-                {category.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-4 py-2 text-sm font-medium bg-white border border-gray-300 text-gray-800 rounded-lg hover:border-primary-500 hover:bg-primary-50 transition-colors"
-                  >
-                    {skill}
-                  </span>
-                ))}
+            <div key={category.category} className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="text-3xl">{category.icon}</span>
+                <h2 className="heading-3 text-gray-900">{category.category}</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {category.skills.map((skill) => {
+                  const levelColors = {
+                    "Advanced": "bg-green-100 text-green-700 border-green-300",
+                    "Intermediate": "bg-blue-100 text-blue-700 border-blue-300",
+                    "Foundational": "bg-gray-100 text-gray-700 border-gray-300",
+                  };
+
+                  return (
+                    <div
+                      key={skill.name}
+                      className="bg-gray-50 border border-gray-200 rounded-lg p-4 hover:border-primary-400 hover:bg-primary-50/50 transition-all group"
+                    >
+                      <div className="flex items-start justify-between mb-2">
+                        <h3 className="font-semibold text-gray-900 text-sm leading-tight flex-1 group-hover:text-primary-700 transition-colors">
+                          {skill.name}
+                        </h3>
+                      </div>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className={`px-2 py-1 text-xs font-medium rounded border ${levelColors[skill.level as keyof typeof levelColors]}`}>
+                          {skill.level}
+                        </span>
+                        <span className="text-xs text-gray-500 font-medium">
+                          {skill.years} {skill.years === "1" ? "year" : "years"}
+                        </span>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           ))}
