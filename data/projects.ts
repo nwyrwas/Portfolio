@@ -494,6 +494,597 @@ export const projects: Project[] = [
       github: "https://github.com/nwyrwas/CS-499-Capstone-Project"
     },
     images: ["/animal-shelter-dashboard.jpg"]
+  },
+  {
+    id: "3d-graphics-opengl",
+    title: "3D Graphics & Visualization with OpenGL",
+    shortDescription: "An interactive 3D scene renderer built with OpenGL and C++ featuring real-time camera controls, lighting systems, and texture mapping to create photorealistic 3D environments",
+    featured: true,
+    year: "2024",
+    context: {
+      problem: "Understanding 3D graphics programming requires mastering complex mathematical transformations, lighting models, and rendering pipelines. This project demonstrates practical application of computer graphics theory through interactive 3D scene creation.",
+      constraints: [
+        "Real-time rendering at 60+ FPS with multiple textured objects",
+        "Support for camera movement and rotation controls",
+        "Implement multiple lighting models (ambient, directional, point)",
+        "Handle 3D transformations (translation, rotation, scaling) with matrices",
+        "Maintain clean, modular C++ architecture"
+      ],
+      stakes: "Academic project for CS-330 (Computer Graphics and Visualization) demonstrating mastery of OpenGL, linear algebra, lighting systems, and real-time rendering techniques"
+    },
+    role: {
+      title: "Graphics Programmer",
+      ownership: "Complete implementation of 3D rendering pipeline, shader programs, camera system, lighting, texture management, and scene composition",
+      teamSize: "Academic Project (Individual)"
+    },
+    approach: {
+      overview: "Built a 3D scene renderer using OpenGL with GLFW for window management and GLAD for extension loading, implementing vertex/fragment shaders, camera controls (WASD movement + mouse look), and multiple lighting sources with texture mapping.",
+      decisions: [
+        {
+          decision: "OpenGL 3.3+ Core Profile for modern rendering",
+          rationale: "Core profile enforces modern best practices, eliminates deprecated fixed-function pipeline, and provides better performance through programmable shaders and vertex buffer objects."
+        },
+        {
+          decision: "GLSL shader programs for vertex and fragment processing",
+          rationale: "Custom shaders provide full control over vertex transformations and pixel coloring, enabling advanced lighting calculations, texture mapping, and visual effects on the GPU."
+        },
+        {
+          decision: "GLM (OpenGL Mathematics) for matrix operations",
+          rationale: "GLM provides GLSL-compatible matrix and vector types in C++, simplifying camera transformations, model-view-projection matrices, and lighting calculations with type-safe API."
+        },
+        {
+          decision: "GLFW for cross-platform window and input management",
+          rationale: "GLFW abstracts platform-specific windowing, handles keyboard/mouse input events, and manages OpenGL context creation with minimal boilerplate code."
+        },
+        {
+          decision: "Phong lighting model with ambient, diffuse, and specular components",
+          rationale: "Phong lighting provides realistic surface appearance by combining ambient illumination, diffuse reflection based on surface normals, and specular highlights for shiny materials."
+        },
+        {
+          decision: "Texture mapping with multiple image formats",
+          rationale: "Textures add photorealistic detail to 3D models without complex geometry. Supporting multiple formats (JPG, PNG) enables diverse material representation like wood, metal, and glass."
+        }
+      ],
+      alternatives: "Considered using Unity or Unreal Engine but chose raw OpenGL to demonstrate fundamental understanding of graphics programming and rendering pipeline mechanics"
+    },
+    challenges: [
+      {
+        challenge: "Implementing smooth camera movement with WASD keys and mouse look",
+        solution: "Built camera system using view matrix transformations with GLM, handling keyboard input for position updates and mouse delta for rotation, applying frame-rate independent movement with deltaTime calculations."
+      },
+      {
+        challenge: "Achieving realistic lighting across multiple object types and materials",
+        solution: "Implemented Phong lighting model in fragment shaders with configurable ambient, diffuse, and specular components. Added support for directional lights and point lights with distance attenuation for depth perception."
+      },
+      {
+        challenge: "Managing texture coordinates and preventing distortion on complex shapes",
+        solution: "Calculated proper UV coordinates for each vertex, implemented texture wrapping modes (repeat, clamp), and applied texture filtering (linear, mipmap) to maintain visual quality at different distances."
+      },
+      {
+        challenge: "Optimizing rendering performance with multiple textured objects",
+        solution: "Used Vertex Buffer Objects (VBOs) and Vertex Array Objects (VAOs) to minimize state changes, implemented efficient draw calls with glDrawArrays, and batched similar objects to reduce GPU overhead."
+      }
+    ],
+    outcomes: [
+      {
+        metric: "Graphics Expertise",
+        impact: "Mastered OpenGL rendering pipeline, shader programming, matrix mathematics, and real-time 3D graphics techniques"
+      },
+      {
+        metric: "Camera System",
+        impact: "Fully interactive camera with WASD movement, mouse look rotation, and arrow key controls for exploring 3D scenes"
+      },
+      {
+        metric: "Lighting Implementation",
+        impact: "Multi-light system with ambient, directional, and point lights using Phong shading model for realistic illumination"
+      },
+      {
+        metric: "Texture Mapping",
+        impact: "10+ unique textures applied to scene objects including wood, metal, glass, and abstract materials"
+      },
+      {
+        metric: "Performance",
+        impact: "Consistent 60+ FPS rendering with multiple textured objects and real-time lighting calculations"
+      },
+      {
+        metric: "Code Architecture",
+        impact: "Modular C++ design with separated shader management, texture loading, camera logic, and scene rendering"
+      }
+    ],
+    techStack: [
+      "C++",
+      "OpenGL 3.3+",
+      "GLFW",
+      "GLAD",
+      "GLM",
+      "GLSL",
+      "Visual Studio"
+    ],
+    links: {
+      github: "https://github.com/nwyrwas/CS-330-Comp-Graphic-and-Visualization"
+    },
+    images: ["/3d-graphics-opengl.png"]
+  },
+  {
+    id: "travlr-travel-platform",
+    title: "Travlr – Full-Stack Travel Management Platform",
+    shortDescription: "A modern MEAN stack travel booking platform with Angular admin dashboard, Express.js RESTful API, and MongoDB database featuring JWT authentication and server-side rendering",
+    featured: true,
+    year: "2024",
+    context: {
+      problem: "Travel agencies need a robust platform to manage trip listings, handle user authentication, and provide both customer-facing views and administrative dashboards. Traditional static websites lack the dynamic capabilities and security required for modern travel management.",
+      constraints: [
+        "Full-stack MEAN architecture (MongoDB, Express, Angular, Node.js)",
+        "Secure JWT-based authentication with Passport.js",
+        "RESTful API design with proper HTTP methods and status codes",
+        "Server-side rendering with Handlebars for SEO and performance",
+        "Responsive design supporting mobile and desktop interfaces",
+        "Admin dashboard with CRUD operations for trip management"
+      ],
+      stakes: "Capstone project for CS-465 (Full-Stack Development) demonstrating proficiency in modern web architecture, API design, database modeling, and authentication systems"
+    },
+    role: {
+      title: "Full-Stack Software Engineering",
+      ownership: "End-to-end development: backend API, admin dashboard, database schema, authentication system, and deployment architecture",
+      teamSize: "Academic Project (Individual)"
+    },
+    approach: {
+      overview: "Built a complete travel management platform using the MEAN stack with separated Express.js backend API and Angular admin frontend, Mongoose for MongoDB ORM, JWT + Passport.js for authentication, and Handlebars for customer-facing server-side rendered views.",
+      decisions: [
+        {
+          decision: "MEAN stack (MongoDB, Express, Angular, Node.js)",
+          rationale: "JavaScript across the entire stack enables code reuse, reduces context switching, and leverages Node.js non-blocking I/O for handling concurrent API requests efficiently."
+        },
+        {
+          decision: "Separated backend API and admin dashboard architecture",
+          rationale: "Decoupling the RESTful API from the admin frontend enables independent scaling, testing, and deployment, while supporting future mobile apps or third-party integrations."
+        },
+        {
+          decision: "JWT (JSON Web Tokens) for stateless authentication",
+          rationale: "JWTs eliminate server-side session storage, enable horizontal scaling, and provide secure token-based authentication that works seamlessly with RESTful APIs and single-page applications."
+        },
+        {
+          decision: "Passport.js for authentication middleware",
+          rationale: "Passport provides battle-tested authentication strategies, simplifies JWT integration, and offers extensibility for future OAuth providers (Google, Facebook) without rewriting auth logic."
+        },
+        {
+          decision: "Mongoose ODM for MongoDB modeling",
+          rationale: "Mongoose enforces schema validation, provides middleware hooks for business logic, and offers a cleaner API for database operations compared to raw MongoDB driver."
+        },
+        {
+          decision: "Server-side rendering with Handlebars for public pages",
+          rationale: "SSR improves SEO for trip listings, reduces initial page load time, and provides better accessibility compared to client-side rendering for content-heavy pages."
+        },
+        {
+          decision: "Angular for admin dashboard",
+          rationale: "Angular's TypeScript support, dependency injection, and component architecture provide enterprise-grade structure for complex admin interfaces with routing, forms, and real-time updates."
+        }
+      ],
+      alternatives: "Considered Next.js for unified frontend/backend but chose MEAN stack to demonstrate traditional RESTful API design and separation of concerns between client and server"
+    },
+    challenges: [
+      {
+        challenge: "Implementing secure JWT authentication across API and admin dashboard",
+        solution: "Built Passport.js JWT strategy that validates tokens on protected routes, implemented token generation on login with expiration, and added Authorization header handling in Angular HTTP interceptors for automatic token attachment."
+      },
+      {
+        challenge: "Designing RESTful API with proper HTTP semantics and error handling",
+        solution: "Implemented REST endpoints following HTTP conventions (GET /api/trips, POST /api/trips, PUT /api/trips/:id, DELETE /api/trips/:id) with appropriate status codes (200, 201, 400, 401, 404, 500) and JSON error responses."
+      },
+      {
+        challenge: "Managing database relationships between users and trips in MongoDB",
+        solution: "Used Mongoose references to link trips to user creators, implemented population for nested queries, and added cascade deletion logic to maintain data integrity when users or trips are removed."
+      },
+      {
+        challenge: "Building responsive admin dashboard with real-time trip updates",
+        solution: "Created Angular services for API communication, implemented reactive forms for trip creation/editing, added client-side validation, and used RxJS observables for handling asynchronous data streams and updates."
+      },
+      {
+        challenge: "Handling CORS for cross-origin API requests from Angular dev server",
+        solution: "Configured Express.js CORS middleware to allow requests from Angular development server (localhost:4200), implemented proper preflight handling, and restricted origins in production for security."
+      }
+    ],
+    outcomes: [
+      {
+        metric: "Full-Stack Proficiency",
+        impact: "Demonstrated mastery of MEAN stack with MongoDB, Express.js, Angular, and Node.js across all tiers"
+      },
+      {
+        metric: "API Design",
+        impact: "RESTful API with GET, POST, PUT, DELETE operations for trips and users, following HTTP best practices"
+      },
+      {
+        metric: "Authentication System",
+        impact: "Secure JWT-based authentication with Passport.js, token expiration, and protected route middleware"
+      },
+      {
+        metric: "Database Architecture",
+        impact: "Mongoose schemas for Users and Trips with validation, references, and middleware hooks for business logic"
+      },
+      {
+        metric: "Admin Dashboard",
+        impact: "Angular SPA with routing, forms, HTTP interceptors, and real-time CRUD operations for trip management"
+      },
+      {
+        metric: "Server-Side Rendering",
+        impact: "Handlebars templates for SEO-optimized public trip listings with dynamic data from MongoDB"
+      }
+    ],
+    techStack: [
+      "Node.js",
+      "Express.js",
+      "Angular",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Passport.js",
+      "Handlebars",
+      "TypeScript",
+      "RxJS",
+      "Morgan"
+    ],
+    links: {
+      github: "https://github.com/nwyrwas/Full-Stack-Development"
+    },
+    images: ["/travlr-travel-platform.png"]
+  },
+  {
+    id: "thermostat-embedded-systems",
+    title: "Smart Thermostat Control System",
+    shortDescription: "An embedded IoT thermostat prototype built for Raspberry Pi featuring state machine logic, PWM LED control, and UART serial communication for temperature regulation simulation",
+    featured: true,
+    year: "2024",
+    context: {
+      problem: "Smart home thermostats require reliable hardware-software integration to control heating/cooling systems based on user input and environmental data. This project explores how embedded systems manage state transitions and hardware peripherals for IoT applications.",
+      constraints: [
+        "Raspberry Pi hardware with GPIO pins, LEDs, and buttons",
+        "State machine design for Off, Heat, and Cool modes",
+        "PWM (Pulse Width Modulation) for LED brightness control",
+        "UART serial communication for data transmission",
+        "Python-based implementation with hardware abstraction",
+        "Support for setpoint adjustment with button inputs"
+      ],
+      stakes: "Academic project for CS-350 (Emerging Systems Architecture and Technologies) demonstrating embedded systems programming, hardware interfacing, and IoT principles"
+    },
+    role: {
+      title: "Embedded Systems Developer",
+      ownership: "Complete development of thermostat logic, state machine implementation, GPIO control, PWM configuration, UART communication, and hardware integration",
+      teamSize: "Academic Project (Individual)"
+    },
+    approach: {
+      overview: "Designed and implemented a thermostat control system using Raspberry Pi 4 with Python, leveraging the gpiozero library for GPIO control and statemachine library for state management, with PWM for LED fading effects and UART for serial communication with external systems.",
+      decisions: [
+        {
+          decision: "Python 3 with gpiozero library for GPIO abstraction",
+          rationale: "gpiozero provides high-level Pythonic API for GPIO operations, simplifying LED and button control while abstracting low-level register manipulation and pin management."
+        },
+        {
+          decision: "State machine pattern for thermostat mode management",
+          rationale: "State machines provide clean separation of Off, Heat, and Cool behaviors with explicit transitions, making the logic maintainable and testable compared to nested conditionals."
+        },
+        {
+          decision: "PWM (Pulse Width Modulation) for LED intensity control",
+          rationale: "PWM enables smooth LED fading effects to indicate temperature differential (solid LED when at setpoint, fading when heating/cooling needed), providing intuitive visual feedback without analog circuits."
+        },
+        {
+          decision: "UART serial communication for thermostat-server messaging",
+          rationale: "UART enables communication with external systems like temperature sensors or monitoring servers, demonstrating real-world IoT connectivity patterns used in smart home devices."
+        },
+        {
+          decision: "Button-based interface for mode cycling and setpoint adjustment",
+          rationale: "Physical buttons simulate real thermostat controls, allowing users to cycle through Off/Heat/Cool modes and adjust target temperature without requiring display or touchscreen."
+        },
+        {
+          decision: "Modular code architecture with separated CRUD, app logic, and data import",
+          rationale: "Separating concerns enables independent testing of state machine logic, hardware interfacing, and serial communication, improving code maintainability and reusability."
+        }
+      ],
+      alternatives: "Considered using C for direct hardware control but chose Python for rapid prototyping, better debugging experience, and extensive library support for Raspberry Pi"
+    },
+    challenges: [
+      {
+        challenge: "Implementing state machine logic with clean transitions between Off, Heat, and Cool modes",
+        solution: "Used statemachine library to define explicit states and transitions, with button press events triggering state changes and LED colors (red for Heat, blue for Cool, off for Off mode) updating automatically."
+      },
+      {
+        challenge: "Creating realistic LED fading effects to indicate temperature differential",
+        solution: "Implemented PWM control with gpiozero's PWMLED class, calculating duty cycle based on difference between current temperature and setpoint. LEDs fade when temperature is away from setpoint and stay solid when reached."
+      },
+      {
+        challenge: "Handling button debouncing and multiple input events simultaneously",
+        solution: "Leveraged gpiozero's Button class with built-in debouncing, configured separate callbacks for mode button, increase button, and decrease button with proper event handling and state updates."
+      },
+      {
+        challenge: "Establishing UART serial communication for data logging and monitoring",
+        solution: "Built client-server architecture using pyserial library, encoding thermostat state (mode, setpoint, temperature) into byte streams, transmitting over UART, and decoding on server side for logging and visualization."
+      },
+      {
+        challenge: "Simulating temperature changes without physical temperature sensor",
+        solution: "Implemented temperature simulation logic that gradually adjusts toward setpoint based on current mode (heating increases temperature, cooling decreases it), providing realistic behavior for testing and demonstration."
+      }
+    ],
+    outcomes: [
+      {
+        metric: "Embedded Systems Expertise",
+        impact: "Demonstrated proficiency in Raspberry Pi GPIO programming, hardware-software integration, and IoT device prototyping"
+      },
+      {
+        metric: "State Machine Implementation",
+        impact: "Clean state-driven architecture with Off, Heat, and Cool modes with button-triggered transitions"
+      },
+      {
+        metric: "PWM Control",
+        impact: "Smooth LED fading effects based on temperature differential using pulse width modulation at 60+ Hz"
+      },
+      {
+        metric: "UART Communication",
+        impact: "Serial data transmission between Raspberry Pi and monitoring server using pyserial with byte encoding/decoding"
+      },
+      {
+        metric: "User Interface",
+        impact: "Physical button controls for mode cycling and setpoint adjustment with real-time LED visual feedback"
+      },
+      {
+        metric: "Video Demonstration",
+        impact: "Published YouTube demo showcasing thermostat functionality and hardware interaction"
+      }
+    ],
+    techStack: [
+      "Python 3",
+      "Raspberry Pi 4",
+      "gpiozero",
+      "statemachine",
+      "pyserial",
+      "GPIO",
+      "PWM",
+      "UART"
+    ],
+    links: {
+      github: "https://github.com/nwyrwas/CS-350-13290-M01-Emerging-Sys-Arch-Tech"
+    },
+    images: ["/thermostat-embedded-systems.png"]
+  },
+  {
+    id: "mobile-inventory-app",
+    title: "Mobile Inventory Management App",
+    shortDescription: "An Android mobile application with SQLite database integration, user authentication, and SMS notifications for tracking inventory items with real-time updates and permission handling",
+    featured: true,
+    year: "2024",
+    context: {
+      problem: "Small businesses and individuals need mobile-first inventory management tools that work offline, support quick data entry, and send alerts for low stock levels. Traditional desktop solutions lack the accessibility and real-time notification capabilities required for mobile workflows.",
+      constraints: [
+        "Android platform with SQLite for local data persistence",
+        "User authentication with login and account creation",
+        "CRUD operations for inventory items in grid format",
+        "Runtime permission handling for SMS notifications",
+        "Responsive UI supporting different screen sizes",
+        "Offline-first architecture without requiring internet connectivity"
+      ],
+      stakes: "Academic project for CS-360 (Mobile Architecture and Programming) demonstrating Android development, database management, permissions, and mobile UI/UX design"
+    },
+    role: {
+      title: "Android Developer",
+      ownership: "Complete development of Android app: UI design, SQLite schema, authentication logic, CRUD operations, SMS integration, and permission handling",
+      teamSize: "Academic Project (Individual)"
+    },
+    approach: {
+      overview: "Built a native Android app using Java and Android Studio with SQLite for offline data storage, implementing user authentication, RecyclerView with custom adapter for inventory grid display, runtime SMS permissions, and material design components for modern UI.",
+      decisions: [
+        {
+          decision: "SQLite database for local inventory storage",
+          rationale: "SQLite provides fast, reliable offline data persistence without requiring server infrastructure, ensuring the app works without internet connectivity and reduces latency for CRUD operations."
+        },
+        {
+          decision: "Java with Android SDK for native app development",
+          rationale: "Java offers mature Android tooling, extensive documentation, and better stability compared to newer frameworks, making it ideal for academic projects requiring robust functionality."
+        },
+        {
+          decision: "RecyclerView with custom adapter for inventory grid",
+          rationale: "RecyclerView efficiently handles large datasets with view recycling, reducing memory overhead and providing smooth scrolling for inventory lists compared to ListView."
+        },
+        {
+          decision: "Runtime permission requests for SMS functionality",
+          rationale: "Android 6.0+ requires runtime permissions for dangerous permissions like SMS. Implementing proper permission handling ensures compliance with Android security model and better user experience."
+        },
+        {
+          decision: "Material Design components for consistent UI",
+          rationale: "Material Design provides familiar, accessible UI patterns with proper touch targets, ripple effects, and elevation, creating professional-looking interfaces that follow Android guidelines."
+        },
+        {
+          decision: "Modular database helper class for CRUD abstraction",
+          rationale: "Separating database logic into a helper class with methods for create, read, update, delete operations improves code maintainability and enables independent testing of database functionality."
+        }
+      ],
+      alternatives: "Considered using Room persistence library for more modern database abstraction but chose raw SQLiteOpenHelper to demonstrate fundamental understanding of Android database operations"
+    },
+    challenges: [
+      {
+        challenge: "Implementing secure user authentication without backend server",
+        solution: "Built local authentication system using SQLite to store hashed passwords with salting, validating credentials on login, and maintaining session state with SharedPreferences for persistent login across app restarts."
+      },
+      {
+        challenge: "Handling dynamic runtime permissions for SMS without disrupting user flow",
+        solution: "Implemented permission request flow that checks for SMS permission before sending notifications, displays rationale dialog if previously denied, and gracefully handles both grant and deny scenarios with appropriate fallback behavior."
+      },
+      {
+        challenge: "Displaying inventory items in responsive grid with add/edit/delete actions",
+        solution: "Used RecyclerView with GridLayoutManager for flexible column counts based on screen size, implemented custom ViewHolder with onClickListeners for edit/delete, and added FloatingActionButton for adding new items."
+      },
+      {
+        challenge: "Maintaining data consistency during concurrent CRUD operations",
+        solution: "Implemented database transactions for atomic updates, used SQLite constraints (UNIQUE, NOT NULL) for data validation, and added proper error handling with rollback logic to prevent data corruption."
+      },
+      {
+        challenge: "Creating intuitive UI for both beginners and experienced users",
+        solution: "Designed clean interface with large touch targets, clear labels, confirmation dialogs for destructive actions (delete), and visual feedback (Snackbars) for all user actions to ensure discoverability and prevent errors."
+      }
+    ],
+    outcomes: [
+      {
+        metric: "Android Development Proficiency",
+        impact: "Demonstrated mastery of Android SDK, SQLite database management, and mobile UI/UX design principles"
+      },
+      {
+        metric: "Database Operations",
+        impact: "Full CRUD functionality with SQLite including user authentication, inventory management, and data validation"
+      },
+      {
+        metric: "Permission Handling",
+        impact: "Runtime permission requests for SMS with proper rationale dialogs and graceful handling of grant/deny scenarios"
+      },
+      {
+        metric: "User Interface",
+        impact: "Material Design components with RecyclerView grid, FloatingActionButton, dialogs, and responsive layouts for different screen sizes"
+      },
+      {
+        metric: "Offline Capability",
+        impact: "Fully functional without internet connectivity, leveraging local SQLite storage for all data operations"
+      },
+      {
+        metric: "SMS Notifications",
+        impact: "Automated alerts for low inventory levels sent via SMS when user grants permission"
+      }
+    },
+    techStack: [
+      "Java",
+      "Android SDK",
+      "Android Studio",
+      "SQLite",
+      "RecyclerView",
+      "Material Design",
+      "SharedPreferences"
+    ],
+    links: {
+      github: "https://github.com/nwyrwas/Mobile-Architect-and-Programming"
+    },
+    images: ["/mobile-inventory-app.png"]
+  },
+  {
+    id: "secure-coding-policy",
+    title: "Enterprise Security Policy Framework",
+    shortDescription: "A comprehensive security policy and secure coding standards document for enterprise software development, covering CERT C/C++ standards, encryption policies, AAA framework, and DevSecOps automation",
+    featured: true,
+    year: "2024",
+    context: {
+      problem: "Software organizations lack integrated security policies that connect secure coding standards with risk assessment, encryption strategies, and automated enforcement. This creates gaps between security principles and practical implementation, leaving systems vulnerable to exploits.",
+      constraints: [
+        "Must cover 10 core security principles with practical coding standards",
+        "Map CERT C/C++ coding standards to security principles with code examples",
+        "Develop threat matrix ranking vulnerabilities by severity and likelihood",
+        "Define encryption policies for data at rest, in flight, and in use",
+        "Implement Triple-A framework (Authentication, Authorization, Accounting)",
+        "Integrate automation tools for static analysis and security enforcement"
+      ],
+      stakes: "Capstone project for CS-405 (Secure Coding) demonstrating ability to design enterprise security policies aligned with industry standards (CERT, OWASP), risk management frameworks, and DevSecOps practices"
+    },
+    role: {
+      title: "Security Engineering Consultant",
+      ownership: "Complete security policy design, coding standards documentation, risk assessment matrix, encryption policy, AAA framework design, automation strategy, and presentation materials",
+      teamSize: "Academic Project (Individual)"
+    },
+    approach: {
+      overview: "Developed a comprehensive security policy for a fictional software company (Green Pace) covering secure coding principles, CERT C/C++ standards with compliant/noncompliant code examples, threat assessment matrix, encryption strategies, AAA controls, and automated security enforcement using static analysis tools integrated into CI/CD pipelines.",
+      decisions: [
+        {
+          decision: "CERT C/C++ Secure Coding Standards as foundation",
+          rationale: "CERT standards are industry-recognized, peer-reviewed guidelines backed by Carnegie Mellon University, providing concrete rules for preventing buffer overflows, integer overflows, and undefined behavior in C/C++ code."
+        },
+        {
+          decision: "Defense-in-depth layered security approach",
+          rationale: "Multiple overlapping security controls ensure that failure of one layer doesn't compromise the entire system, providing redundancy and reducing single points of failure."
+        },
+        {
+          decision: "Risk assessment matrix with severity, likelihood, and remediation cost",
+          rationale: "Quantifying risks enables prioritization of high-severity, high-likelihood vulnerabilities for immediate remediation while deferring low-risk issues, optimizing resource allocation and managing technical debt strategically."
+        },
+        {
+          decision: "Encryption at rest (AES-256), in flight (TLS/IPSec), and in use (secure enclaves)",
+          rationale: "Comprehensive encryption strategy protects data in all states, ensuring confidentiality even if storage media, network traffic, or processing memory is compromised."
+        },
+        {
+          decision: "Triple-A framework (Authentication, Authorization, Accounting)",
+          rationale: "AAA provides complete access control: verifying identity (authentication), enforcing permissions (authorization), and logging actions (accounting) for audit trails and compliance requirements."
+        },
+        {
+          decision: "Automated security enforcement with static analysis tools",
+          rationale: "Integrating Clang warnings, CodeSonar, Coverity, Cppcheck, and Axivion into CI/CD pipelines ensures every code commit is validated against security standards, catching vulnerabilities before production deployment."
+        },
+        {
+          decision: "Zero Trust security model with continuous validation",
+          rationale: "Eliminating implicit trust and requiring continuous authentication/authorization prevents lateral movement after breaches and reduces insider threat risks."
+        }
+      ],
+      alternatives: "Considered using generic security frameworks like NIST CSF but chose CERT coding standards for concrete, code-level guidance that developers can immediately apply"
+    },
+    challenges: [
+      {
+        challenge: "Translating abstract security principles into actionable coding standards",
+        solution: "Mapped 10 core security principles (least privilege, defense in depth, input validation) to specific CERT C/C++ rules (STR32-C, INT31-C, MEM54-CPP) with compliant and noncompliant code examples showing exactly what to do and what to avoid."
+      },
+      {
+        challenge: "Balancing security requirements with business constraints and development velocity",
+        solution: "Created threat matrix ranking vulnerabilities by severity (critical to low), likelihood (high to rare), and remediation cost, enabling strategic prioritization where high-risk issues are fixed immediately while low-risk items are deferred to manage technical debt."
+      },
+      {
+        challenge: "Designing encryption policies that cover all data states without excessive complexity",
+        solution: "Defined layered encryption approach: AES-256 for data at rest (databases, backups), TLS 1.3/IPSec for data in flight (network traffic), and secure enclaves/homomorphic encryption for data in use (processing), with clear guidelines on when each applies."
+      },
+      {
+        challenge: "Enforcing security policies across development lifecycle without manual audits",
+        solution: "Integrated automated security tools (Clang, CodeSonar, Coverity, Cppcheck, Axivion, Astree) into CI/CD pipelines with automated unit testing, regression testing, and dependency scanning, ensuring continuous enforcement at scale."
+      },
+      {
+        challenge: "Communicating technical security concepts to non-technical stakeholders",
+        solution: "Created presentation materials with executive summary slides, speaker notes script, and visual diagrams explaining defense-in-depth, encryption strategies, and risk tradeoffs in business terms focused on value and cost-benefit analysis."
+      }
+    ],
+    outcomes: [
+      {
+        metric: "Policy Scope",
+        impact: "60+ page comprehensive security policy covering principles, coding standards, risk assessment, encryption, AAA, and automation"
+      },
+      {
+        metric: "Coding Standards",
+        impact: "10 CERT C/C++ standards mapped to security principles with compliant and noncompliant code examples"
+      },
+      {
+        metric: "Threat Assessment",
+        impact: "Risk matrix ranking vulnerabilities by severity, likelihood, and remediation cost for strategic prioritization"
+      },
+      {
+        metric: "Encryption Framework",
+        impact: "Complete encryption policies for data at rest (AES-256), in flight (TLS/IPSec), and in use (secure enclaves)"
+      },
+      {
+        metric: "AAA Implementation",
+        impact: "Triple-A framework with authentication (MFA), authorization (RBAC), and accounting (audit logging) controls"
+      },
+      {
+        metric: "Automation Strategy",
+        impact: "DevSecOps pipeline with integrated static analysis tools (Clang, CodeSonar, Coverity, Axivion, Cppcheck)"
+      },
+      {
+        metric: "Presentation Materials",
+        impact: "Stakeholder slide deck and speaker notes for communicating security value and risk tradeoffs"
+      }
+    },
+    techStack: [
+      "CERT C/C++ Standards",
+      "OWASP Top 10",
+      "Clang Static Analyzer",
+      "CodeSonar",
+      "Coverity",
+      "Cppcheck",
+      "Axivion",
+      "Astree",
+      "AES-256",
+      "TLS/IPSec",
+      "Zero Trust Architecture"
+    ],
+    links: {
+      github: "https://github.com/nwyrwas/CS-405-15275-Secure-Coding"
+    },
+    images: ["/secure-coding-policy.png"]
   }
 ];
 
