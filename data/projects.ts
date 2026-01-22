@@ -45,7 +45,7 @@ export const projects: Project[] = [
     title: "NeuralOS",
     shortDescription: "A full-stack AI-powered notes application that uses semantic search and GPT-4 to help you capture, organize, and recall your thoughts using natural language",
     featured: true,
-    year: "2025",
+    year: "2026",
     context: {
       problem: "Traditional note-taking apps let you save notes, but finding them later is painful. Keyword search fails when you can't remember exact words.",
       constraints: [
@@ -275,7 +275,7 @@ export const projects: Project[] = [
     title: "Intelligent Pirate Maze Agent",
     shortDescription: "An autonomous AI agent that uses Deep Q-Learning to navigate an 8×8 maze environment, achieving 100% success rate across all starting positions through reinforcement learning",
     featured: true,
-    year: "2024",
+    year: "2025",
     context: {
       problem: "Traditional pathfinding requires explicit programming of rules and strategies. This project explores whether an AI agent can learn optimal navigation autonomously through trial and error, without hardcoded instructions.",
       constraints: [
@@ -500,7 +500,7 @@ export const projects: Project[] = [
     title: "3D Graphics & Visualization with OpenGL",
     shortDescription: "An interactive 3D scene renderer built with OpenGL and C++ featuring real-time camera controls, lighting systems, and texture mapping to create photorealistic 3D environments",
     featured: true,
-    year: "2024",
+    year: "2025",
     context: {
       problem: "Understanding 3D graphics programming requires mastering complex mathematical transformations, lighting models, and rendering pipelines. This project demonstrates practical application of computer graphics theory through interactive 3D scene creation.",
       constraints: [
@@ -609,7 +609,7 @@ export const projects: Project[] = [
     title: "Travlr – Full-Stack Travel Management Platform",
     shortDescription: "A modern MEAN stack travel booking platform with Angular admin dashboard, Express.js RESTful API, and MongoDB database featuring JWT authentication and server-side rendering",
     featured: true,
-    year: "2024",
+    year: "2025",
     context: {
       problem: "Travel agencies need a robust platform to manage trip listings, handle user authentication, and provide both customer-facing views and administrative dashboards. Traditional static websites lack the dynamic capabilities and security required for modern travel management.",
       constraints: [
@@ -731,7 +731,7 @@ export const projects: Project[] = [
     title: "Smart Thermostat Control System",
     shortDescription: "An embedded IoT thermostat prototype built for Raspberry Pi featuring state machine logic, PWM LED control, and UART serial communication for temperature regulation simulation",
     featured: true,
-    year: "2024",
+    year: "2025",
     context: {
       problem: "Smart home thermostats require reliable hardware-software integration to control heating/cooling systems based on user input and environmental data. This project explores how embedded systems manage state transitions and hardware peripherals for IoT applications.",
       constraints: [
@@ -846,7 +846,7 @@ export const projects: Project[] = [
     title: "Mobile Inventory Management App",
     shortDescription: "An Android mobile application with SQLite database integration, user authentication, and SMS notifications for tracking inventory items with real-time updates and permission handling",
     featured: true,
-    year: "2024",
+    year: "2025",
     context: {
       problem: "Small businesses and individuals need mobile-first inventory management tools that work offline, support quick data entry, and send alerts for low stock levels. Traditional desktop solutions lack the accessibility and real-time notification capabilities required for mobile workflows.",
       constraints: [
@@ -960,7 +960,7 @@ export const projects: Project[] = [
     title: "Enterprise Security Policy Framework",
     shortDescription: "A comprehensive security policy and secure coding standards document for enterprise software development, covering CERT C/C++ standards, encryption policies, AAA framework, and DevSecOps automation",
     featured: true,
-    year: "2024",
+    year: "2025",
     context: {
       problem: "Software organizations lack integrated security policies that connect secure coding standards with risk assessment, encryption strategies, and automated enforcement. This creates gaps between security principles and practical implementation, leaving systems vulnerable to exploits.",
       constraints: [
