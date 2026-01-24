@@ -10,23 +10,8 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <Section background="none" className="pt-20 md:pt-32 relative overflow-hidden">
-        {/* Geometric Shapes Background - More Visible */}
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          {/* Large blue orb - top right */}
-          <div className="absolute -top-10 -right-10 w-[500px] h-[500px] bg-gradient-to-br from-blue-300/60 to-purple-300/50 rounded-full blur-3xl"></div>
-
-          {/* Medium purple orb - left */}
-          <div className="absolute top-32 -left-20 w-[400px] h-[400px] bg-gradient-to-br from-purple-300/50 to-pink-300/40 rounded-full blur-3xl"></div>
-
-          {/* Small pink accent - bottom right */}
-          <div className="absolute bottom-10 right-20 w-80 h-80 bg-gradient-to-br from-pink-300/40 to-blue-300/35 rounded-full blur-2xl"></div>
-
-          {/* Subtle grid pattern overlay */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]"></div>
-        </div>
-
-        <div className="max-w-4xl relative z-10">
+      <Section background="none" className="pt-20 md:pt-32">
+        <div className="max-w-4xl">
           <div className="inline-block mb-4 px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-semibold">
             Computer Science Graduate • USMC Veteran
           </div>
