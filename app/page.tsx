@@ -11,19 +11,19 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <Section background="none" className="pt-20 md:pt-32 relative overflow-hidden">
-        {/* Subtle Geometric Shapes Background */}
+        {/* Geometric Shapes Background - More Visible */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
           {/* Large blue orb - top right */}
-          <div className="absolute -top-20 -right-20 w-96 h-96 bg-gradient-to-br from-blue-200/40 to-purple-200/30 rounded-full blur-3xl"></div>
+          <div className="absolute -top-10 -right-10 w-[500px] h-[500px] bg-gradient-to-br from-blue-300/60 to-purple-300/50 rounded-full blur-3xl"></div>
 
           {/* Medium purple orb - left */}
-          <div className="absolute top-40 -left-32 w-80 h-80 bg-gradient-to-br from-purple-200/30 to-pink-200/25 rounded-full blur-3xl"></div>
+          <div className="absolute top-32 -left-20 w-[400px] h-[400px] bg-gradient-to-br from-purple-300/50 to-pink-300/40 rounded-full blur-3xl"></div>
 
           {/* Small pink accent - bottom right */}
-          <div className="absolute bottom-20 right-40 w-64 h-64 bg-gradient-to-br from-pink-200/25 to-blue-200/20 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 right-20 w-80 h-80 bg-gradient-to-br from-pink-300/40 to-blue-300/35 rounded-full blur-2xl"></div>
 
           {/* Subtle grid pattern overlay */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]"></div>
         </div>
 
         <div className="max-w-4xl relative z-10">

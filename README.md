@@ -244,7 +244,7 @@ Unlike template-based portfolios, this project demonstrates:
 
 I'm actively seeking software engineering opportunities where I can contribute to meaningful projects and continue growing as a developer.
 
-- **Website**: [nickwyrwas.com](nwyrwas.github.io)
+- **Website**: [nwyrwas.github.io](nwyrwas.github.io)
 - **Email**: nick.wyrwas@outlook.com
 - **GitHub**: [github.com/nwyrwas](https://github.com/nwyrwas)
 - **LinkedIn**: [linkedin.com/in/nicholas-wyrwas](https://linkedin.com/in/nicholas-wyrwas)
