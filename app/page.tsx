@@ -10,11 +10,9 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <Section className="pt-20 md:pt-32 relative overflow-hidden">
+      <Section background="none" className="pt-20 md:pt-32 relative overflow-hidden">
         {/* Mesh Gradient Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 -z-10"></div>
-        {/* Glassmorphism Overlay */}
-        <div className="absolute inset-0 backdrop-blur-[100px] -z-10"></div>
         <div className="max-w-4xl">
           <div className="inline-block mb-4 px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-semibold">
             Computer Science Graduate • USMC Veteran
