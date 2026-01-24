@@ -78,7 +78,7 @@ export default function Home() {
       </Section>
 
       {/* Featured Projects */}
-      <Section background="gray">
+      <Section background="none">
         <div className="mb-12">
           <h2 className="heading-2 mb-4">Featured Projects</h2>
           <p className="body-large max-w-2xl">
@@ -154,7 +154,7 @@ export default function Home() {
       </Section>
 
       {/* Skills Overview */}
-      <Section>
+      <Section background="none">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="heading-2 mb-4">Technical Background</h2>
@@ -258,7 +258,7 @@ export default function Home() {
 
 
       {/* CTA Section */}
-      <Section background="gray">
+      <Section background="none">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="heading-2 mb-4">Let's Work Together</h2>
           <p className="body-large mb-8">

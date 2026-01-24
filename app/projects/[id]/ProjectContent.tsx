@@ -16,7 +16,7 @@ export default function ProjectContent({ project }: Props) {
 
   return (
     <>
-      <Section className="pt-20">
+      <Section background="none" className="pt-20">
         {/* Header */}
         <div className="max-w-4xl mb-12">
           <div className="flex items-center gap-3 mb-4">
