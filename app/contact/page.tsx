@@ -32,9 +32,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <Section background="none" className="pt-20 relative overflow-hidden">
-        {/* Mesh Gradient Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 -z-10"></div>
+      <Section background="none" className="pt-20">
         <div className="max-w-4xl mx-auto">
           <div className="mb-12 text-center">
             <h1 className="heading-1 mb-6">Let's Talk</h1>

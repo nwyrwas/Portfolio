@@ -172,9 +172,7 @@ const skillCategories = [
 export default function SkillsPage() {
   return (
     <>
-      <Section background="none" className="pt-20 relative overflow-hidden">
-        {/* Mesh Gradient Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 -z-10"></div>
+      <Section background="none" className="pt-20">
         <div className="max-w-4xl mb-12">
           <h1 className="heading-1 mb-6">Skills & Expertise</h1>
           <p className="body-large mb-6">

@@ -10,24 +10,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <Section background="none" className="pt-20 md:pt-32 relative overflow-hidden">
-        {/* Dark Background with 3D Geometric Shapes */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 -z-10"></div>
-
-        {/* Floating Geometric Shapes */}
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          {/* Large cube - top right */}
-          <div className="absolute top-20 right-32 w-64 h-64 bg-gradient-to-br from-amber-500/20 to-orange-600/30 rotate-45 transform-gpu blur-xl rounded-3xl"></div>
-
-          {/* Medium cube - left */}
-          <div className="absolute top-40 -left-20 w-48 h-48 bg-gradient-to-br from-blue-500/15 to-cyan-600/20 rotate-12 transform-gpu blur-2xl rounded-2xl"></div>
-
-          {/* Small accent - bottom right */}
-          <div className="absolute bottom-32 right-20 w-32 h-32 bg-gradient-to-br from-purple-500/20 to-pink-600/25 -rotate-12 transform-gpu blur-xl rounded-xl"></div>
-
-          {/* Warm glow orb - center */}
-          <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-gradient-radial from-amber-400/10 via-orange-500/5 to-transparent blur-3xl rounded-full"></div>
-        </div>
+      <Section background="none" className="pt-20 md:pt-32">
         <div className="max-w-4xl">
           <div className="inline-block mb-4 px-4 py-2 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded-full text-sm font-semibold">
             Computer Science Graduate • USMC Veteran
