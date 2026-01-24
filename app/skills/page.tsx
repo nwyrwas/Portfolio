@@ -172,7 +172,7 @@ const skillCategories = [
 export default function SkillsPage() {
   return (
     <>
-      <Section className="pt-20">
+      <Section className="pt-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 bg-[length:200%_200%] animate-gradient">
         <div className="max-w-4xl mb-12">
           <h1 className="heading-1 mb-6">Skills & Expertise</h1>
           <p className="body-large mb-6">
