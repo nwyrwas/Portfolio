@@ -10,15 +10,30 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <Section background="none" className="pt-20 md:pt-32">
-        <div className="max-w-4xl">
-          <div className="inline-block mb-4 px-4 py-2 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 rounded-full text-sm font-semibold">
+      <Section background="none" className="pt-20 md:pt-32 relative overflow-hidden">
+        {/* Subtle Geometric Shapes Background */}
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          {/* Large blue orb - top right */}
+          <div className="absolute -top-20 -right-20 w-96 h-96 bg-gradient-to-br from-blue-200/40 to-purple-200/30 rounded-full blur-3xl"></div>
+
+          {/* Medium purple orb - left */}
+          <div className="absolute top-40 -left-32 w-80 h-80 bg-gradient-to-br from-purple-200/30 to-pink-200/25 rounded-full blur-3xl"></div>
+
+          {/* Small pink accent - bottom right */}
+          <div className="absolute bottom-20 right-40 w-64 h-64 bg-gradient-to-br from-pink-200/25 to-blue-200/20 rounded-full blur-2xl"></div>
+
+          {/* Subtle grid pattern overlay */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:64px_64px]"></div>
+        </div>
+
+        <div className="max-w-4xl relative z-10">
+          <div className="inline-block mb-4 px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-semibold">
             Computer Science Graduate • USMC Veteran
           </div>
-          <h1 className="heading-1 mb-6 text-white">
+          <h1 className="heading-1 mb-6">
             Building Full-Stack Applications and Exploring AI Engineering
           </h1>
-          <p className="body-large mb-8 max-w-2xl text-gray-300">
+          <p className="body-large mb-8 max-w-2xl">
             I'm a recent Computer Science graduate with hands-on experience building web applications, mobile apps, and AI-powered systems through academic projects and internships. I bring a disciplined, mission-focused approach to learning and problem-solving, eager to contribute to real-world software projects.
           </p>
           <div className="flex flex-wrap gap-4">

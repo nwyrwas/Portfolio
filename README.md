@@ -2,7 +2,7 @@
 
 A modern, production-ready portfolio website I built to showcase my software engineering projects, technical skills, and professional background. This portfolio demonstrates my capabilities in full-stack development, modern web technologies, and clean, maintainable code architecture.
 
-🔗 **Live Site**: [nickwyrwas.com](https://nickwyrwas.com)
+🔗 **Live Site**: [nickwyrwas.com](https://nwyrwas.github.io)
 
 ## About This Project
 

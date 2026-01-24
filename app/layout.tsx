@@ -65,7 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 text-white">
+      <body className="font-sans bg-gray-50 text-gray-900">
         <Navigation />
         <main>{children}</main>
         <Footer />
