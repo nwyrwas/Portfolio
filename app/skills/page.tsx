@@ -179,8 +179,49 @@ export default function SkillsPage() {
             Technical skills developed through academic coursework, personal projects, and recent internships.
             I'm continuously expanding my capabilities and eager to apply what I've learned in a professional setting.
           </p>
+        </div>
 
-          {/* Proficiency Legend */}
+        {/* Areas of Focus - Moved to top */}
+        <div className="max-w-4xl mb-16">
+          <h2 className="heading-2 mb-8">Areas of Focus</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-primary-50 to-blue-50 p-6 rounded-lg border border-primary-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Full-Stack Development</h3>
+              <p className="body text-gray-700">
+                Building web applications through academic projects and internships using React, Next.js,
+                Node.js, and Django. Learning RESTful API design, database modeling, and connecting frontend
+                interfaces to backend services.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-lg border border-green-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">AI & Machine Learning</h3>
+              <p className="body text-gray-700">
+                Exploring AI-powered applications through internship work with RAG pipelines, OpenAI APIs, and vector databases.
+                Academic experience with TensorFlow, Keras, and neural networks. Eager to deepen my understanding of ML systems.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-50 to-violet-50 p-6 rounded-lg border border-purple-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Secure Coding Practices</h3>
+              <p className="body text-gray-700">
+                Completed coursework in secure software development covering input validation, SQL injection defense,
+                and buffer overflow mitigation. Learning about vulnerability identification, code analysis, and secure development lifecycle.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-lg border border-orange-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Systems & Documentation</h3>
+              <p className="body text-gray-700">
+                Professional experience with documentation management in regulated environments (ISO 13485, cGMP).
+                Developed strong skills in process documentation, change control, and maintaining compliance standards.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Proficiency Legend */}
+        <div className="max-w-4xl mb-12">
           <div className="bg-gradient-to-r from-gray-50 to-blue-50 border border-gray-200 rounded-lg p-5">
             <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide mb-3">
               Proficiency Levels
@@ -247,45 +288,6 @@ export default function SkillsPage() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Key Areas of Focus */}
-        <div className="mt-20 pt-16 border-t border-gray-200 max-w-4xl">
-          <h2 className="heading-2 mb-8">Areas of Focus</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-primary-50 to-blue-50 p-6 rounded-lg border border-primary-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Full-Stack Development</h3>
-              <p className="body text-gray-700">
-                Building web applications through academic projects and internships using React, Next.js,
-                Node.js, and Django. Learning RESTful API design, database modeling, and connecting frontend
-                interfaces to backend services.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-lg border border-green-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">AI & Machine Learning</h3>
-              <p className="body text-gray-700">
-                Exploring AI-powered applications through internship work with RAG pipelines, OpenAI APIs, and vector databases.
-                Academic experience with TensorFlow, Keras, and neural networks. Eager to deepen my understanding of ML systems.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-purple-50 to-violet-50 p-6 rounded-lg border border-purple-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Secure Coding Practices</h3>
-              <p className="body text-gray-700">
-                Completed coursework in secure software development covering input validation, SQL injection defense,
-                and buffer overflow mitigation. Learning about vulnerability identification, code analysis, and secure development lifecycle.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-lg border border-orange-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Systems & Documentation</h3>
-              <p className="body text-gray-700">
-                Professional experience with documentation management in regulated environments (ISO 13485, cGMP).
-                Developed strong skills in process documentation, change control, and maintaining compliance standards.
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Professional Skills */}

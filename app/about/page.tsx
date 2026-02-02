@@ -218,6 +218,60 @@ export default function AboutPage() {
               </ul>
             </div>
 
+            <h2 className="heading-3 mb-6">Education & Continuous Learning</h2>
+
+            <div className="space-y-6 mb-12">
+              <div className="border-l-2 border-gray-300 pl-6 py-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  BS Computer Science - Software Engineering
+                </h3>
+                <p className="text-sm text-gray-600 mb-3">
+                  Southern New Hampshire University • October 2022 – November 2025
+                </p>
+                <p className="text-sm font-semibold text-gray-700 mb-2">Graduated: November 1st 2025</p>
+                <p className="text-sm text-gray-600 mb-3"><em>Manchester, NH</em></p>
+
+                <div className="space-y-3 body text-gray-700">
+                  <div>
+                    <p className="font-semibold mb-1">Academic Achievement:</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>• Honor Roll: Spring 2023, Fall 2023, Spring 2024</li>
+                      <li>• Dean's List: Fall 2024, Spring 2025, Fall 2025</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold mb-1">Relevant Coursework:</p>
+                    <ul className="ml-4 space-y-1">
+                      <li>• <strong>Software Engineering & Development:</strong> Software Development Lifecycle, System Analysis & Design, Programming Languages, Foundations of Application Development, Current Emerging Trends in CS</li>
+                      <li>• <strong>Cybersecurity & Reverse Engineering:</strong> Software Security, Secure Coding, Software Reverse Engineering (C++/Assembly/Binary Translation, Disassembly Analysis, Vulnerability Detection), Operating Platforms</li>
+                      <li>• <strong>Data & Algorithms:</strong> Discrete Mathematics, Applied Linear Algebra, Applied Statistics for STEM, Data Structures & Algorithms (Analysis of Algorithms, Structured and Unstructured Data, Database Environments)</li>
+                      <li>• <strong>Full-Stack & Mobile:</strong> Client Server Development, Full Stack Development I, Mobile Architecture & Programming, UI/UX Design & Development</li>
+                      <li>• <strong>Specialized & Technical:</strong> Computer Graphics & Visualization, Emerging Systems Architecture & Technology, Introduction to Scripting, Intro Physics: Mechanics</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-l-2 border-gray-300 pl-6 py-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  Computer Science
+                </h3>
+                <p className="text-sm text-gray-600 mb-3">
+                  McHenry County College
+                </p>
+                <p className="text-sm text-gray-600"><em>Foundational coursework in computer science fundamentals</em></p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 border-l-4 border-primary-500 p-6 rounded-r mb-12">
+              <h3 className="heading-4 mb-3">Continuous Learning</h3>
+              <p className="body">
+                I maintain a consistent learning routine through structured algorithms study, technical reading, and building weekend CLI projects to reinforce fundamental programming patterns.
+                I'm motivated by learning through building, refining my work through feedback, and steadily improving as an engineer.
+              </p>
+            </div>
+
             <div className="flex items-center gap-3 mb-8">
               <svg className="w-8 h-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -370,60 +424,6 @@ export default function AboutPage() {
                   </ul>
                 </div>
               </div>
-            </div>
-              
-            <h2 className="heading-3 mb-6">Education & Continuous Learning</h2>
-
-            <div className="space-y-6 mb-12">
-              <div className="border-l-2 border-gray-300 pl-6 py-2">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  BS Computer Science - Software Engineering
-                </h3>
-                <p className="text-sm text-gray-600 mb-3">
-                  Southern New Hampshire University • October 2022 – November 2025
-                </p>
-                <p className="text-sm font-semibold text-gray-700 mb-2">Graduated: November 1st 2025</p>
-                <p className="text-sm text-gray-600 mb-3"><em>Manchester, NH</em></p>
-
-                <div className="space-y-3 body text-gray-700">
-                  <div>
-                    <p className="font-semibold mb-1">Academic Achievement:</p>
-                    <ul className="ml-4 space-y-1">
-                      <li>• Honor Roll: Spring 2023, Fall 2023, Spring 2024</li>
-                      <li>• Dean's List: Fall 2024, Spring 2025, Fall 2025</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold mb-1">Relevant Coursework:</p>
-                    <ul className="ml-4 space-y-1">
-                      <li>• <strong>Software Engineering & Development:</strong> Software Development Lifecycle, System Analysis & Design, Programming Languages, Foundations of Application Development, Current Emerging Trends in CS</li>
-                      <li>• <strong>Cybersecurity & Reverse Engineering:</strong> Software Security, Secure Coding, Software Reverse Engineering (C++/Assembly/Binary Translation, Disassembly Analysis, Vulnerability Detection), Operating Platforms</li>
-                      <li>• <strong>Data & Algorithms:</strong> Discrete Mathematics, Applied Linear Algebra, Applied Statistics for STEM, Data Structures & Algorithms (Analysis of Algorithms, Structured and Unstructured Data, Database Environments)</li>
-                      <li>• <strong>Full-Stack & Mobile:</strong> Client Server Development, Full Stack Development I, Mobile Architecture & Programming, UI/UX Design & Development</li>
-                      <li>• <strong>Specialized & Technical:</strong> Computer Graphics & Visualization, Emerging Systems Architecture & Technology, Introduction to Scripting, Intro Physics: Mechanics</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="border-l-2 border-gray-300 pl-6 py-2">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Computer Science
-                </h3>
-                <p className="text-sm text-gray-600 mb-3">
-                  McHenry County College
-                </p>
-                <p className="text-sm text-gray-600"><em>Foundational coursework in computer science fundamentals</em></p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 border-l-4 border-primary-500 p-6 rounded-r mb-12">
-              <h3 className="heading-4 mb-3">Continuous Learning</h3>
-              <p className="body">
-                I continue developing my skills through hands-on practice, personal projects, and studying real-world codebases.
-                I’m motivated by learning through building, refining my work through feedback, and steadily improving as an engineer.
-              </p>
             </div>
 
             <h2 className="heading-3 mb-6">Outside of Work</h2>
