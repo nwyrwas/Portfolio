@@ -304,6 +304,20 @@ export default function SkillsPage() {
             <div className="flex items-start gap-3">
               <div className="mt-1 w-2 h-2 rounded-full bg-primary-500 flex-shrink-0"></div>
               <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Application Development</h3>
+                <p className="text-sm text-gray-600">End-to-end application development from planning to deployment</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="mt-1 w-2 h-2 rounded-full bg-primary-500 flex-shrink-0"></div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Secure Software Development Practices</h3>
+                <p className="text-sm text-gray-600">Security-first development with input validation and OWASP compliance</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="mt-1 w-2 h-2 rounded-full bg-primary-500 flex-shrink-0"></div>
+              <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Software Development Lifecycle (SDLC)</h3>
                 <p className="text-sm text-gray-600">Full lifecycle experience from requirements to deployment</p>
               </div>
@@ -341,6 +355,13 @@ export default function SkillsPage() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Deadline-Driven Project Execution</h3>
                 <p className="text-sm text-gray-600">Delivering high-quality results on schedule</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="mt-1 w-2 h-2 rounded-full bg-primary-500 flex-shrink-0"></div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Problem-Solving & Debugging</h3>
+                <p className="text-sm text-gray-600">Systematic troubleshooting and root cause analysis for complex issues</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
@@ -390,6 +411,13 @@ export default function SkillsPage() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Conflict Resolution & Stakeholder Communication</h3>
                 <p className="text-sm text-gray-600">Managing expectations and resolving technical disagreements</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="mt-1 w-2 h-2 rounded-full bg-primary-500 flex-shrink-0"></div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Performance Optimization & Code Review</h3>
+                <p className="text-sm text-gray-600">Code quality improvement through performance analysis and peer review</p>
               </div>
             </div>
           </div>
