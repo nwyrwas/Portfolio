@@ -274,7 +274,7 @@ export const projects: Project[] = [
     id: "intelligent-pirate-maze-agent",
     title: "Intelligent Pirate Maze Agent",
     shortDescription: "An autonomous AI agent that uses Deep Q-Learning to navigate an 8×8 maze environment, achieving 100% success rate across all starting positions through reinforcement learning",
-    featured: true,
+    featured: false,
     year: "2025",
     context: {
       problem: "Traditional pathfinding requires explicit programming of rules and strategies. This project explores whether an AI agent can learn optimal navigation autonomously through trial and error, without hardcoded instructions.",
@@ -378,7 +378,7 @@ export const projects: Project[] = [
     id: "animal-shelter-analytics",
     title: "Animal Shelter Analytics Dashboard",
     shortDescription: "An interactive data analytics dashboard built with Dash and MongoDB that transforms static animal shelter data into actionable insights with real-time visualizations and geospatial mapping",
-    featured: true,
+    featured: false,
     year: "2025",
     context: {
       problem: "Animal shelters need data-driven insights to optimize rescue operations, but traditional CRUD applications lack visualization capabilities and interactive analytics to identify adoption trends and geographic patterns.",
@@ -499,7 +499,7 @@ export const projects: Project[] = [
     id: "3d-graphics-opengl",
     title: "3D Graphics & Visualization with OpenGL",
     shortDescription: "An interactive 3D scene renderer built with OpenGL and C++ featuring real-time camera controls, lighting systems, and texture mapping to create photorealistic 3D environments",
-    featured: true,
+    featured: false,
     year: "2025",
     context: {
       problem: "Understanding 3D graphics programming requires mastering complex mathematical transformations, lighting models, and rendering pipelines. This project demonstrates practical application of computer graphics theory through interactive 3D scene creation.",
@@ -608,7 +608,7 @@ export const projects: Project[] = [
     id: "travlr-travel-platform",
     title: "Travlr – Full-Stack Travel Management Platform",
     shortDescription: "A modern MEAN stack travel booking platform with Angular admin dashboard, Express.js RESTful API, and MongoDB database featuring JWT authentication and server-side rendering",
-    featured: true,
+    featured: false,
     year: "2025",
     context: {
       problem: "Travel agencies need a robust platform to manage trip listings, handle user authentication, and provide both customer-facing views and administrative dashboards. Traditional static websites lack the dynamic capabilities and security required for modern travel management.",
@@ -730,7 +730,7 @@ export const projects: Project[] = [
     id: "thermostat-embedded-systems",
     title: "Smart Thermostat Control System",
     shortDescription: "An embedded IoT thermostat prototype built for Raspberry Pi featuring state machine logic, PWM LED control, and UART serial communication for temperature regulation simulation",
-    featured: true,
+    featured: false,
     year: "2025",
     context: {
       problem: "Smart home thermostats require reliable hardware-software integration to control heating/cooling systems based on user input and environmental data. This project explores how embedded systems manage state transitions and hardware peripherals for IoT applications.",
@@ -845,7 +845,7 @@ export const projects: Project[] = [
     id: "mobile-inventory-app",
     title: "Mobile Inventory Management App",
     shortDescription: "An Android mobile application with SQLite database integration, user authentication, and SMS notifications for tracking inventory items with real-time updates and permission handling",
-    featured: true,
+    featured: false,
     year: "2025",
     context: {
       problem: "Small businesses and individuals need mobile-first inventory management tools that work offline, support quick data entry, and send alerts for low stock levels. Traditional desktop solutions lack the accessibility and real-time notification capabilities required for mobile workflows.",
@@ -959,7 +959,7 @@ export const projects: Project[] = [
     id: "secure-coding-policy",
     title: "Enterprise Security Policy Framework",
     shortDescription: "A comprehensive security policy and secure coding standards document for enterprise software development, covering CERT C/C++ standards, encryption policies, AAA framework, and DevSecOps automation",
-    featured: true,
+    featured: false,
     year: "2025",
     context: {
       problem: "Software organizations lack integrated security policies that connect secure coding standards with risk assessment, encryption strategies, and automated enforcement. This creates gaps between security principles and practical implementation, leaving systems vulnerable to exploits.",
@@ -1080,6 +1080,131 @@ export const projects: Project[] = [
     links: {
       github: "https://github.com/nwyrwas/CS-405-15275-Secure-Coding"
     }
+  },
+  {
+    id: "terminal-dashboard",
+    title: "Terminal Dashboard",
+    shortDescription: "A powerful, interactive Python terminal dashboard for system monitoring, task management, and productivity tracking with real-time stats, Pomodoro timer, and RSS news feeds",
+    featured: true,
+    year: "2026",
+    context: {
+      problem: "Developers constantly switch between multiple applications to monitor system resources, track tasks, check weather, read news, and manage focus sessions. This context-switching disrupts workflow and reduces productivity.",
+      constraints: [
+        "Must work in any terminal without GUI dependencies",
+        "Real-time system monitoring without performance overhead",
+        "Plugin architecture for extensibility and modularity",
+        "Support for interactive keyboard controls and navigation",
+        "Work offline for core features (system stats, todos, timer)",
+        "Clean, readable interface in 256-color terminals"
+      ],
+      stakes: "Personal project demonstrating Python expertise, TUI development, system programming, plugin architecture, and building developer tools that solve real workflow problems"
+    },
+    role: {
+      title: "Python Developer & Systems Programmer",
+      ownership: "Complete development: architecture design, widget system, async API client, configuration management, testing infrastructure, and documentation",
+      teamSize: "Personal Project"
+    },
+    approach: {
+      overview: "Built an interactive terminal dashboard using Textual and Rich libraries for TUI rendering, psutil for system metrics, Pydantic for type-safe configuration, and httpx for async API calls. Implemented modular widget architecture with real-time updates and keyboard-driven interface.",
+      decisions: [
+        {
+          decision: "Textual + Rich for terminal UI framework",
+          rationale: "Textual provides React-like component model for building complex TUIs with keyboard navigation. Rich offers beautiful terminal formatting with colors, panels, and progress bars without requiring GUI libraries."
+        },
+        {
+          decision: "Plugin-based widget architecture",
+          rationale: "Each widget (system, network, weather, todo) is an independent module with its own logic and rendering. This makes the dashboard extensible, testable, and allows widgets to be added/removed without modifying core code."
+        },
+        {
+          decision: "Pydantic models for configuration validation",
+          rationale: "Pydantic enforces type safety on JSON config files, provides automatic validation with helpful error messages, and generates type hints for better IDE support and fewer runtime errors."
+        },
+        {
+          decision: "psutil for cross-platform system monitoring",
+          rationale: "psutil abstracts OS differences for CPU, memory, disk, network, and battery stats, providing consistent API across Windows, macOS, and Linux without platform-specific code."
+        },
+        {
+          decision: "Async httpx client with caching for API calls",
+          rationale: "Non-blocking async requests prevent dashboard freezing during weather/RSS fetches. Built-in caching reduces API calls and improves responsiveness when re-rendering widgets."
+        },
+        {
+          decision: "JSON-based configuration with in-app settings editor",
+          rationale: "JSON files are human-readable for power users who want to edit directly, while in-app settings screen (press 's') provides user-friendly interface for common configurations without leaving the dashboard."
+        },
+        {
+          decision: "Pomodoro timer with persistent session tracking",
+          rationale: "Pomodoro technique improves focus and productivity. Persisting timer state to JSON ensures work sessions aren't lost if dashboard restarts, and session counter tracks daily productivity."
+        }
+      ],
+      alternatives: "Considered building a web-based dashboard but chose terminal for lower resource usage, faster startup, accessibility on remote servers via SSH, and avoiding browser/Electron overhead"
+    },
+    challenges: [
+      {
+        challenge: "Real-time UI updates without blocking terminal or consuming excessive CPU",
+        solution: "Implemented async event loop with configurable refresh interval (default 1 second). Widgets only re-render when data changes, and expensive operations (API calls, disk I/O) run in background threads to keep UI responsive."
+      },
+      {
+        challenge: "Managing state across multiple interactive widgets (todos, Pomodoro, settings)",
+        solution: "Created singleton ConfigManager that loads/saves JSON files, provides thread-safe access to shared state, and persists changes immediately. Each widget reads from config on render and writes updates atomically to prevent data corruption."
+      },
+      {
+        challenge: "Handling keyboard input for todo navigation, timer controls, and settings",
+        solution: "Built key binding system with intuitive shortcuts (↑/↓/j/k for navigation, Space to toggle, 'a' to add, 'd' to delete, 'p' for Pomodoro, 's' for settings, 'q' to quit) with visual indicators showing available actions."
+      },
+      {
+        challenge: "Fetching weather and RSS data without slowing down dashboard startup",
+        solution: "Implemented async httpx client that fetches API data in background while dashboard loads. Added request caching with TTL to avoid redundant API calls, and graceful fallbacks if network is unavailable or APIs are down."
+      },
+      {
+        challenge: "Testing terminal UI components and ensuring cross-platform compatibility",
+        solution: "Built 36 unit tests using pytest covering models, config management, and API client. Used Pydantic's validation testing, mocked external dependencies (psutil, httpx), and tested on macOS, Linux, and Windows Terminal."
+      }
+    ],
+    outcomes: [
+      {
+        metric: "Widget Coverage",
+        impact: "10 fully functional widgets: System, Network, Processes, Battery, Git, Weather, Calendar, News, Todo, Pomodoro"
+      },
+      {
+        metric: "Code Architecture",
+        impact: "Modular plugin system with core framework (models, config, API) separated from widgets for extensibility"
+      },
+      {
+        metric: "Test Coverage",
+        impact: "36 passing unit tests covering configuration, models, API client, and data validation with pytest"
+      },
+      {
+        metric: "Type Safety",
+        impact: "Full type hints throughout codebase with Pydantic models for runtime validation and mypy compatibility"
+      },
+      {
+        metric: "Performance",
+        impact: "1-second refresh interval with async API calls, minimal CPU overhead (~2-3% idle), and instant keyboard response"
+      },
+      {
+        metric: "User Experience",
+        impact: "Keyboard-driven interface with intuitive shortcuts, in-app settings editor, and color-coded stats for quick scanning"
+      },
+      {
+        metric: "Documentation",
+        impact: "Comprehensive README with setup instructions, keyboard shortcuts, configuration guide, and troubleshooting section"
+      }
+    ],
+    techStack: [
+      "Python 3.10+",
+      "Textual",
+      "Rich",
+      "psutil",
+      "httpx",
+      "Pydantic",
+      "pytest",
+      "feedparser",
+      "GitPython"
+    ],
+    links: {
+      github: "https://github.com/nwyrwas/terminal-dashboard"
+    },
+    images: ["/terminal-dashboard-1.jpg", "/terminal-dashboard-2.jpg"]
   }
 ];
 
