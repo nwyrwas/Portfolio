@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About – Nicholas Wyrwas",
-  description: "Aspiring Software Engineer",
+  description: "Software engineering graduate and U.S. Marine Corps veteran with a proven track record in technical leadership, quality assurance, and full-stack AI-powered development.",
 };
 
 export default function AboutPage() {
@@ -20,25 +20,36 @@ export default function AboutPage() {
               {/* Elevator Pitch */}
               <div className="bg-gradient-to-r from-primary-50 to-blue-50 border-l-4 border-primary-600 p-6 rounded-r mb-8">
                 <p className="body-large font-medium text-gray-900 mb-3">
-                  Recent Computer Science graduate and Marine Corps veteran building full-stack applications and exploring AI engineering.
+                  Software engineering graduate and U.S. Marine Corps veteran with a proven track record in technical leadership, quality assurance, and full-stack AI-powered development.
                 </p>
                 <p className="body text-gray-700">
-                  I bring a disciplined, mission-driven approach to learning and problem-solving—shaped by military service and hands-on academic projects.
+                  I bring military-forged discipline, a results-driven mindset, and hands-on experience building production-grade applications — open to roles in software engineering, quality assurance, or data-focused development.
                 </p>
               </div>
 
               <p className="body-large mb-6 text-gray-700">
-                Through my degree program and recent internships, I've gained hands-on experience with full-stack web development, RESTful API design, and AI-powered applications.
-                I've worked with technologies like Python, JavaScript, React, Django, Node.js, and modern AI frameworks through academic projects and internships.
-                I'm eager to continue learning and applying these skills in a professional environment.
+                Through internships at Connectify, Radical AI, and Reality AI, I've built production-grade applications using Django, React, Vue.js, RESTful APIs, and AI/ML integration including RAG pipelines, vector search, and OpenAI APIs.
+                I've taken ownership of full-stack systems end-to-end — from architecture decisions to deployment — and collaborated with cross-functional teams to deliver real results.
               </p>
 
               <p className="body mb-6">
-                Before transitioning fully into software engineering, I served in the U.S. Marine Corps and later worked in regulated
-                manufacturing environments operating under ISO 13485 and cGMP standards. These experiences reinforced discipline,
-                attention to detail, and the importance of clear processes—principles I now apply to writing secure, reliable,
-                and well-documented software.
+                Before transitioning into software engineering, I led and mentored teams in regulated manufacturing environments at Stryker Medical, driving compliance under ISO 13485 and cGMP standards.
+                Prior to that, I served in the U.S. Marine Corps — an experience that shaped my natural ability to take ownership, guide others, and uphold high standards under pressure.
+                These foundations carry directly into how I approach engineering and leadership challenges today.
               </p>
+
+              {/* Leadership Highlight */}
+              <div className="bg-white border-l-4 border-primary-500 rounded-r-lg p-5 mb-8 shadow-sm">
+                <div className="flex items-center gap-2 mb-2">
+                  <svg className="w-5 h-5 text-primary-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span className="text-xs font-bold text-primary-600 uppercase tracking-wide">Leadership Background</span>
+                </div>
+                <p className="body text-gray-700">
+                  With leadership experience across regulated manufacturing and military service, I bring a practical understanding of what it takes to develop people, maintain accountability, and build teams that operate at a high standard.
+                </p>
+              </div>
 
               {/* Career Goals Section - Enhanced */}
               <div className="relative bg-gradient-to-br from-primary-50 via-blue-50 to-primary-50 border-2 border-primary-400 rounded-lg p-6 my-8 shadow-md">
@@ -54,12 +65,12 @@ export default function AboutPage() {
                   What I'm Looking For
                 </h3>
                 <p className="body text-gray-800 mb-4 font-medium">
-                  I'm seeking an entry-level software engineering role where I can learn from experienced engineers, contribute to real-world projects,
-                  and continue developing my skills in full-stack development.
+                  I'm seeking a role in software engineering, quality assurance, or data-focused development where I can contribute from day one,
+                  take ownership of meaningful work, and continue growing alongside experienced engineers.
                 </p>
                 <p className="body text-gray-700">
-                  I'm drawn to teams that value clean code, collaborative learning, and continuous improvement. I'm ready to work hard,
-                  ask questions, and grow as an engineer while making meaningful contributions to projects I believe in.
+                  I'm drawn to teams that value clean code, accountability, and continuous improvement. My background in both technical leadership
+                  and hands-on development gives me a unique perspective — I understand what it takes to build reliable systems and to lead people toward high standards.
                 </p>
               </div>
             </div>
