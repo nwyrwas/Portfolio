@@ -1209,42 +1209,47 @@ export const projects: Project[] = [
   {
     id: "personal-dashboard",
     title: "Personal Dashboard",
-    shortDescription: "A real-time personal dashboard built with Next.js that aggregates live weather, GitHub profile stats, and Hacker News feeds into a single responsive interface deployed on Vercel",
+    shortDescription: "A real-time dashboard built with Next.js featuring live weather, GitHub stats, Hacker News feed, uptime monitoring, and a dynamic clock against an animated city skyline — deployed on Vercel",
     featured: true,
     year: "2026",
     context: {
-      problem: "Checking multiple services — weather, GitHub activity, and tech news — requires switching between tabs and apps constantly, breaking focus.",
+      problem: "Checking multiple services — weather, GitHub activity, tech news, and site health — requires constant tab switching that breaks focus and productivity.",
       constraints: [
         "API keys must never be exposed to the client",
         "External API calls should be minimized to stay within free tier limits",
         "Must be responsive across mobile and desktop",
-        "Clock component must avoid hydration mismatches in Next.js SSR"
+        "Clock component must avoid hydration mismatches in Next.js SSR",
+        "Background video must not bloat the repo size"
       ],
-      stakes: "Portfolio project demonstrating Next.js App Router, TypeScript, API route design, server-side caching, and production deployment on Vercel"
+      stakes: "Portfolio project demonstrating Next.js App Router, TypeScript, API route design, server-side caching, parallel async patterns, and production deployment on Vercel"
     },
     role: {
       title: "Full-Stack Developer",
-      ownership: "End-to-end ownership: architecture, API route design, widget development, caching strategy, and Vercel deployment",
+      ownership: "End-to-end ownership: architecture, API route design, widget development, caching strategy, UI design, and Vercel deployment",
       teamSize: "Personal Project"
     },
     approach: {
-      overview: "Built a Next.js 15 App Router application with server-side API routes that proxy external APIs (OpenWeatherMap, GitHub REST API, Hacker News Algolia API), protecting credentials and enabling response caching. Each widget is an independent component with its own data fetching and error handling.",
+      overview: "Built a Next.js 16 App Router application with server-side API routes proxying OpenWeatherMap, GitHub REST API, and Hacker News Algolia API. Each widget is an independent component with its own data fetching and error handling. Site status monitoring runs parallel health checks via Promise.all(). An animated city skyline video with frosted glass card effects provides the visual layer.",
       decisions: [
         {
           decision: "Server-side API routes to proxy all external API calls",
-          rationale: "Keeps API keys out of the browser entirely. The client only ever calls internal Next.js routes, never the third-party APIs directly."
+          rationale: "Keeps API keys out of the browser entirely. The client only ever calls internal Next.js routes, never third-party APIs directly."
         },
         {
-          decision: "Per-endpoint response caching (30min weather, 1hr GitHub)",
+          decision: "Per-endpoint response caching via Next.js revalidate (30min weather, 1hr GitHub)",
           rationale: "Reduces redundant external API calls and keeps the app within free tier limits while still serving reasonably fresh data."
         },
         {
-          decision: "Independent widget architecture with isolated error handling",
-          rationale: "A failure in one widget (e.g., weather API down) doesn't break the rest of the dashboard. Each widget manages its own loading and error states."
+          decision: "Parallel health checks using Promise.all() for the site status monitor",
+          rationale: "Fires all uptime checks simultaneously rather than sequentially, keeping the status widget fast regardless of how many endpoints are monitored."
         },
         {
-          decision: "Hydration-safe clock with client-only rendering",
-          rationale: "The real-time clock uses a useEffect + state pattern to avoid server/client HTML mismatches, a common SSR pitfall in Next.js."
+          decision: "Hydration-safe clock with client-only rendering via useEffect",
+          rationale: "Avoids server/client HTML mismatches — a common SSR pitfall in Next.js — by deferring time rendering until after client mount."
+        },
+        {
+          decision: "External video hosting on GitHub Releases for the animated background",
+          rationale: "Keeps the repo lightweight while still delivering the animated city skyline. Frosted glass (backdrop-blur) cards sit over the video for a polished UI."
         }
       ],
       alternatives: "Considered fetching data client-side with SWR but server-side caching via Next.js route handlers provides better credential security and reduces client bundle size"
@@ -1260,33 +1265,41 @@ export const projects: Project[] = [
       },
       {
         challenge: "Multiple widgets hitting external APIs on every page load risked rate limiting",
-        solution: "Added response caching at the API route level — weather caches for 30 minutes, GitHub stats for 1 hour — cutting redundant external calls significantly"
+        solution: "Added response caching at the API route level via Next.js revalidate — weather caches for 30 minutes, GitHub stats for 1 hour"
+      },
+      {
+        challenge: "Site status checks running sequentially would slow down the widget",
+        solution: "Used Promise.all() to fire all health checks in parallel, keeping response times fast regardless of the number of monitored endpoints"
+      },
+      {
+        challenge: "Including a background video in the repo would inflate its size",
+        solution: "Hosted the animated city skyline video on GitHub Releases and referenced it externally, keeping the repo lean"
       }
     ],
     outcomes: [
       {
-        metric: "Deployment",
-        impact: "Live on Vercel with automatic CI/CD from the main branch"
+        metric: "Live Demo",
+        impact: "Deployed at personal-dashboard-khaki.vercel.app with automatic CI/CD from the main branch"
       },
       {
         metric: "API Security",
         impact: "Zero client-side API key exposure — all secrets handled server-side via Next.js route handlers"
       },
       {
-        metric: "Performance",
-        impact: "Response caching reduces external API calls by up to 90% for repeat visitors within the cache window"
+        metric: "Widgets",
+        impact: "6 independent widgets: live clock, weather with city search, GitHub profile stats, Hacker News feed (top 8), site status monitor, and time-based greeting"
+      },
+      {
+        metric: "TypeScript Coverage",
+        impact: "95.3% TypeScript across the codebase"
       },
       {
         metric: "Responsive Layout",
-        impact: "Single-column on mobile, three-column grid on desktop using Tailwind CSS 4"
-      },
-      {
-        metric: "Data Sources",
-        impact: "Aggregates OpenWeatherMap, GitHub REST API, and Hacker News Algolia API into one unified interface"
+        impact: "CSS Grid adapting from 1 column on mobile to 3 columns on desktop using Tailwind CSS 4"
       }
     ],
     techStack: [
-      "Next.js 15",
+      "Next.js 16",
       "TypeScript",
       "React 19",
       "Tailwind CSS 4",
@@ -1296,7 +1309,8 @@ export const projects: Project[] = [
       "Vercel"
     ],
     links: {
-      github: "https://github.com/nwyrwas/personal-dashboard"
+      github: "https://github.com/nwyrwas/personal-dashboard",
+      demo: "https://personal-dashboard-khaki.vercel.app/"
     },
     images: ["/personal-dashboard.jpg"]
   }
